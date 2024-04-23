@@ -1,0 +1,14 @@
+/* Style the search container */
+.search-container {
+    margin-bottom: 15px;
+  }
+  
+  /* Style the list items */
+  #itemList li {
+    display: none; /* Initially hide all items */
+  }
+  
+  /* Show items that match the search */
+  #itemList li.show {
+    display: block;
+  }
