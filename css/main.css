@@ -233,3 +233,10 @@ ul li{
 section{
   margin-top: 120px;
 }
+
+.flex{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+

@@ -12,3 +12,13 @@
   #itemList li.show {
     display: block;
   }
+
+  .fa-circle-xmark{
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .fa-circle-xmark:hover{
+    color: #FF642F;
+  }
+  

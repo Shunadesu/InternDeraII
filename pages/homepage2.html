@@ -3,9 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage 2</title>
+    <link rel="stylesheet" href="../css/input.css">
+    <link rel="stylesheet" href="../css/searchBar.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../js/main.js">
+    <link rel="stylesheet" href="../js/searchBar.js">
+    <!-- <link rel="stylesheet" href="../css/pages_scss/header/header.css"> -->
+    <link rel="stylesheet" href="../css/pages_scss/header/homepage2/header2.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/input.css">
+
+    <link rel="stylesheet" href="../css/pages_scss/homepage2scss/homepage2.css">
+
+    <script src="https://kit.fontawesome.com/2f3b74e382.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    
+    <header class="header pagePadding">
+        <a href="./index.html" class="nav__logo">
+          <img src="../img/Logo.png" alt="logo">
+        </a>
+        <div class="nav">
+          <div class="nav__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="nav__bar">
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Homepage</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="/index.html">Homepages 1</a>
+                  <a href="/pages/homepage2.html">Homepages 2</a>
+                  <a href="/pages/homepage3.html">Homepages 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Recipe Page</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="/index.html">Homepages 1</a>
+                  <a href="/pages/homepage2.html">Homepages 2</a>
+                  <a href="/pages/homepage3.html">Homepages 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Pages</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="/index.html">Homepages 1</a>
+                  <a href="/pages/homepage2.html">Homepages 2</a>
+                  <a href="/pages/homepage3.html">Homepages 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__bar--items"><p>Buy</p></div>
+          </div>
+          <a href="/login">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </div>
+    </header>
+    <div class="searchBar pagePadding">
+      <div class="search-container"> 
+          <input placeholder="Search.." id="searchInput" name="text" type="text">
+      </div>
+      <ul id="itemList">
+       
+      </ul>
+
+      <p class="closeButton"><i class="fa-regular fa-circle-xmark"></i></p>
+    </div>
+    <main class="main">
+      <div class="container">
+        <section class="threecols pagePadding">
+            <div class="threecols__items">
+              <div class="threecols__items--content">
+                <div class="threecols__items--image">
+                  <img src="../img/superdelicious/superdelicious1.png" alt="">
+                </div>
+                <div class="threecols__items--star">
+                 <div class="flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                 </div>
+                </div>
+                <div class="threecols__items--name">
+                  <p>Spinach and Cheese Pasta</p>
+                </div>
+              </div>
+              <div class="threecols__items--content">
+                <div class="threecols__items--image">
+                  <img src="../img/superdelicious/superdelicious2.png" alt="">
+                </div>
+                <div class="threecols__items--star">
+                  <div class="flex">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                </div>
+                <div class="threecols__items--name">
+                  <p>Fancy Glazed Donuts</p>
+                </div>
+              </div>
+              <div class="threecols__items--content">
+                <div class="threecols__items--image">
+                  <img src="../img/superdelicious/superdelicious3.png" alt="">
+                </div>
+                <div class="threecols__items--star">
+                  <div class="flex">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                </div>
+                <div class="threecols__items--name">
+                  <p>Mighty Cheesy Breakfast Burger</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="inbox pagePadding">
+          <div class="inbox__content">
+            <h1>Deliciousness to your inbox</h1>
+            <h4>Enjoy weekly hand picked recipes and recommendations</h4>
+            <div class="input-group">
+              <input type="email" class="input" id="Email" name="Email" placeholder="Email Address" autocomplete="off">
+              <input class="button--submit" value="JOIN" type="submit">
+            </div>
+            <div class="inbox__text">
+              <p>By joining our newsletter you agree to our <strong class="underline">Terms and Conditions</strong> </p>
+            </div>
+          </div>
+      </section>
+      </div>
+    </main>
+    <script src="../js/searchBar.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/render/renderRecipes.js"></script>
 </body>
 </html>

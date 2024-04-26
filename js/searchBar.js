@@ -44,3 +44,35 @@ searchInput.addEventListener('keyup', function() {
     }
   }
 });
+
+const searchInput_second = document.getElementById('searchInput');
+const itemList_second = document.getElementById('itemList_second');
+
+// Add event listener for keyup event on input
+searchInput.addEventListener('keyup', function() {
+  // Get the search query
+  const searchText = this.value.toLowerCase();
+
+  // Get all list items
+  const items = itemList.getElementsByTagName('li');
+
+  // Loop through all list items
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    const text = item.textContent.toLowerCase();
+
+    if (!searchText) {
+        for (let i = 0; i < items.length; i++) {
+          items[i].classList.remove('show');
+        }
+        return; // Exit the function early
+      }
+
+    // If the item matches the search query, display it, otherwise hide it
+    if (text.indexOf(searchText) !== -1) {
+      item.classList.add('show');
+    } else {
+      item.classList.remove('show');
+    }
+  }
+});

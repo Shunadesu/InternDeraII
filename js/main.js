@@ -1,188 +1,43 @@
-const renderRecipes = document.querySelector('.recipes__container')
-
-const recipesData = [
-    {
-        id: 1,
-        img: "./img/recipes/image1.png",
-        text: 'Caramel Strawberry Milkshake'
-    },
-    {
-        id: 2,
-        img: './img/recipes/image2.png',
-        text: 'Cashew Vegan Rice'
-    },
-    {
-        id: 3,
-        img: './img/recipes/image3.png',
-        text: 'Smoked Salmon Salad Sandwich'
-    },
-    {
-        id: 4,
-        img: './img/recipes/image4.png',
-        text: 'Salmon in Creamy Sun Dried Tomato Sauce'
-    },
-    {
-        id: 5,
-        img: './img/recipes/image5.png',
-        text: 'Healthy Jam Waffle Breakfast'
-    },
-    {
-        id: 6,
-        img: './img/recipes/image6.png',
-        text: 'Chocolate and Banana Jar Cake'
-    },
-    {
-        id: 7,
-        img: './img/recipes/image7.png',
-        text: 'Caramel Blueberry Scones'
-    },
-    {
-        id: 8,
-        img: './img/recipes/image8.png',
-        text: 'Blueberry Carrot Cake'
-    },
-
-    {
-        id: 9,
-        img: './img/recipes/image9.png',
-        text: 'Vegan Cauliflower Salad'
-    },
-    {
-        id: 10,
-        img: './img/recipes/image10.png',
-        text: 'Roasted Red Pepper Soup'
-    },
-    {
-        id: 11,
-        img: './img/recipes/image11.png',
-        text: 'Eggs and Avocado Toast'
-    },
-    {
-        id: 12,
-        img: './img/recipes/image12.png',
-        text: 'Pork Shoulder Cashew Noodles'
-    },
-    {
-        id: 13,
-        img: './img/recipes/image13.png',
-        text: 'Toasted Farfalle In Pesto Sauce'
-    },
-    {
-        id: 14,
-        img: './img/recipes/image14.png',
-        text: 'Cheesy Bacon Burger Sliders'
-    },
-    {
-        id: 15,
-        img: './img/recipes/image15.png',
-        text: 'Fig and Raisins Oatmeal'
-    },
-    {
-        id: 16,
-        img: './img/recipes/image16.png',
-        text: 'Silky Smooth Panacotta'
-    },
-
-    {
-        id: 17,
-        img: './img/recipes/image17.png',
-        text: 'Tripple Decker Cranberry'
-    },
-    {
-        id: 18,
-        img: './img/recipes/image18.png',
-        text: 'Very Berry Healthy Summer Smoothie'
-    },
-    {
-        id: 19,
-        img: './img/recipes/image19.png',
-        text: 'Crispy Orange Chips'
-    },
-    {
-        id: 20,
-        img: './img/recipes/image20.png',
-        text: 'Tumeric Lavendar Tea'
-    },
-    {
-        id: 21,
-        img: './img/recipes/image21.png',
-        text: 'Blue Velvet Brownies'
-    },
-    {
-        id: 22,
-        img: './img/recipes/image22.png',
-        text: 'Birthday Cupcakes'
-    },
-    {
-        id: 23,
-        img: './img/recipes/image23.png',
-        text: 'Gourmet Fillet in Roasted Almond Sauce'
-    },
-    {
-        id: 24,
-        img: './img/recipes/image24.png',
-        text: 'Four Ingredient Oatmeal Pancakes'
-    },
-]
-
-
-const renderrecipes = recipesData.map((data) => {
-    return `
-    <div class="recipes__content">
-        <div class="recipes__content--img">
-        <img src=${data.img} alt="">
-        </div>
-        <div class="recipes__content--text">
-            ${data.text}
-        </div>
-    </div>
-  
-  `
-})
-renderRecipes.innerHTML = renderrecipes.join('');
-
-
 const renderSearchItems = document.querySelector('#itemList')
-console.log(renderSearchItems)
 const searchItemsData = [
     {
         id: 1,
-        img: "./img/recipes/image1.png",
+        img: "../img/recipes/image1.png",
         text: 'Caramel Strawberry Milkshake'
     },
     {
         id: 2,
-        img: './img/recipes/image2.png',
+        img: '../img/recipes/image2.png',
         text: 'Cashew Vegan Rice'
     },
     {
         id: 3,
-        img: './img/recipes/image3.png',
+        img: '../img/recipes/image3.png',
         text: 'Smoked Salmon Salad Sandwich'
     },
     {
         id: 4,
-        img: './img/recipes/image4.png',
+        img: '../img/recipes/image4.png',
         text: 'Salmon in Creamy Sun Dried Tomato Sauce'
     },
     {
         id: 5,
-        img: './img/recipes/image5.png',
+        img: '../img/recipes/image5.png',
         text: 'Healthy Jam Waffle Breakfast'
     },
     {
         id: 6,
-        img: './img/recipes/image6.png',
+        img: '../img/recipes/image6.png',
         text: 'Chocolate and Banana Jar Cake'
     },
     {
         id: 7,
-        img: './img/recipes/image7.png',
+        img: '../img/recipes/image7.png',
         text: 'Caramel Blueberry Scones'
     },
     {
         id: 8,
-        img: './img/recipes/image8.png',
+        img: '../img/recipes/image8.png',
         text: 'Blueberry Carrot Cake'
     },
 ]
@@ -191,7 +46,7 @@ const searchItemsData = [
 const rendersearch = searchItemsData.map((data) => {
     return `
     <li>
-        <div class="itemList__content">
+        <a href='/#' class="itemList__content">
         <div class="itemList__content--img">
             <img src=${data.img} alt="">
         </div>
@@ -199,9 +54,32 @@ const rendersearch = searchItemsData.map((data) => {
             <h5>${data.text}</h5>
             <p>Category</p>
         </div>
-        </div>
+        </a>
     </li>
   
     `
 })
 renderSearchItems.innerHTML = rendersearch.join('');
+
+
+const navItems = document.querySelectorAll('.nav__bar--item');
+const contentContainer = document.getElementById('nav__bar-content-container');
+
+navItems.forEach(navItem => {
+    navItem.addEventListener('click', (event) => {
+        // Hide all content divs first
+        const contentDivs = contentContainer.querySelectorAll('div');
+        contentDivs.forEach(contentDiv => contentDiv.style.display = 'none');
+
+        // Get the data-content attribute value
+        const contentId = event.target.dataset.content;
+
+        // Show the appropriate content div
+        const contentDiv = document.getElementById(contentId);
+        contentDiv.style.display = 'block';
+
+        // Optionally, add a visual indicator on the clicked item (e.g., background color change)
+        navItems.forEach(item => item.classList.remove('active')); // Remove active class from all items
+        event.target.classList.add('active'); // Add active class to the clicked item
+    });
+});
