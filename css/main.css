@@ -240,3 +240,14 @@ section{
   align-items: center;
 }
 
+.flex .flex-col{
+  flex-direction: column;
+}
+
+.fa-star{
+  color: var(--primaryColor);
+}
+
+.font-bold{
+  font-weight: bold;
+}
