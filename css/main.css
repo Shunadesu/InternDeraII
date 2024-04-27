@@ -233,3 +233,21 @@ ul li{
 section{
   margin-top: 120px;
 }
+
+.flex{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flex .flex-col{
+  flex-direction: column;
+}
+
+.fa-star{
+  color: var(--primaryColor);
+}
+
+.font-bold{
+  font-weight: bold;
+}

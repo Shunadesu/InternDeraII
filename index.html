@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./css/input.css">
     <link rel="stylesheet" href="./css/searchBar.css">
 
+    <link rel="stylesheet" href="./css/pages_scss/header/header.css">
+    <link rel="stylesheet" href="./css/pages_scss/footer/footer.css">
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2f3b74e382.js" crossorigin="anonymous"></script>
   </head>
@@ -21,15 +24,58 @@
     <div class="loading"></div>
     <header class="header pagePadding">
         <div class="nav">
-          <div class="nav__logo">
+          <a href="./index.html" class="nav__logo">
             <img src="./img/Logo.png" alt="logo">
-          </div>
+          </a>
           <div class="nav__bar">
-            <div class="nav__bar--items"><p>Homepage</p></div>
-            <div class="nav__bar--items"><p>Recipe Page</p></div>
-            <div class="nav__bar--items"><p>Pages</p></div>
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Homepage</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="./index.html">Homepages 1</a>
+                  <a href="./pages/homepage2.html">Homepages 2</a>
+                  <a href="./pages/homepage3.html">Homepages 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Recipe Page</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="./index.html">Homepages 1</a>
+                  <a href="./pages/homepage2.html">Homepages 2</a>
+                  <a href="./pages/homepage3.html">Homepages 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Pages</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="./index.html">Homepages 1</a>
+                  <a href="./pages/homepage2.html">Homepages 2</a>
+                  <a href="./pages/homepage3.html">Homepages 3</a>
+                </div>
+              </div>
+            </div>
             <div class="nav__bar--items"><p>Buy</p></div>
           </div>
+
           <div class="nav__search">
             <i class="fa-solid fa-magnifying-glass"></i>
             <a href="./login">
@@ -42,12 +88,11 @@
       <div class="search-container"> 
           <input placeholder="Search.." id="searchInput" name="text" type="text">
       </div>
-      
       <ul id="itemList">
        
       </ul>
 
-      <p class="closeButton">Close Button</p>
+      <p class="closeButton"><i class="fa-regular fa-circle-xmark"></i></p>
     </div>
     <main class="main">
       <div class="container">
@@ -61,6 +106,7 @@
               <h2>Mighty Super Cheesecake</h3>
               <h4>Look no furthur for a creamy and ultra smooth classic cheesecake recipe! no one can deny its simple decadence</h4>
             </div>
+            <a href="./pages/homepage2.html" class="banner_icon"><i class="fa-solid fa-arrow-right"></i></a>
           </section>
         </div>
         <section class="threecols pagePadding">
@@ -71,7 +117,13 @@
                   <img src="./img/superdelicious/superdelicious1.png" alt="">
                 </div>
                 <div class="threecols__items--star">
-                 <p>5 star</p>
+                 <div class="flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                 </div>
                 </div>
                 <div class="threecols__items--name">
                   <p>Spinach and Cheese Pasta</p>
@@ -82,7 +134,13 @@
                   <img src="./img/superdelicious/superdelicious2.png" alt="">
                 </div>
                 <div class="threecols__items--star">
-                 <p>5 star</p>
+                  <div class="flex">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
                 </div>
                 <div class="threecols__items--name">
                   <p>Fancy Glazed Donuts</p>
@@ -93,7 +151,13 @@
                   <img src="./img/superdelicious/superdelicious3.png" alt="">
                 </div>
                 <div class="threecols__items--star">
-                 <p>5 star</p>
+                  <div class="flex">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
                 </div>
                 <div class="threecols__items--name">
                   <p>Mighty Cheesy Breakfast Burger</p>
@@ -109,7 +173,13 @@
                 <img src="./img/sweettooth/sweettooth.png" alt="">
               </div>
               <div class="threecols__items--star">
-               <p>5 star</p>
+                <div class="flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                 </div>
               </div>
               <div class="threecols__items--name">
                 <p>Caramel Strawberry Milkshake</p>
@@ -120,7 +190,13 @@
                 <img src="./img/sweettooth/sweettooth2.png" alt="">
               </div>
               <div class="threecols__items--star">
-               <p>5 star</p>
+                <div class="flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                 </div>
               </div>
               <div class="threecols__items--name">
                 <p>Chocolate and Banana Jar Cake</p>
@@ -131,7 +207,13 @@
                 <img src="./img/sweettooth/sweettooth3.png" alt="">
               </div>
               <div class="threecols__items--star">
-               <p>5 star</p>
+                <div class="flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                 </div>
               </div>
               <div class="threecols__items--name">
                 <p>Berry Maddness Biscuts</p>
@@ -207,10 +289,10 @@
                 <img src="./img/collections/collections1.png" alt="">
               </div>
               <div class="collections__content--items">
-                <h2>Sushi Combos for your next party</h2>
-                <div class="items__box">
+                <h2>Sushi Combos for your next </h2>
+                <a href="./#" class="items__box">
                   156 Recipes
-                </div>
+                </a>
               </div>
             </div>
 
@@ -221,9 +303,9 @@
               </div>
               <div class="collections__content--items">
                 <h2>Everything Bagel Ideas Dinner</h2>
-                <div class="items__box">
+                <a href="./#" class="items__box">
                   156 Recipes
-                </div>
+                </a>
               </div>
             </div>
 
@@ -234,9 +316,9 @@
               </div>
               <div class="collections__content--items">
                 <h2>Cook like a Chef as MasterChef</h2>
-                <div class="items__box">
+                <a href="./#" class="items__box">
                   156 Recipes
-                </div>
+                </a>
               </div>
             </div>
 
@@ -247,9 +329,9 @@
               </div>
               <div class="collections__content--items">
                 <h2>Exquisite Dinner Recipe Ideas</h2>
-                <div class="items__box">
+                <a href="./#" class="items__box">
                   156 Recipes
-                </div>
+                </a>
               </div>
             </div>
 
@@ -260,9 +342,9 @@
               </div>
               <div class="collections__content--items">
                 <h2>The Ultimate Cookie Frenzy</h2>
-                <div class="items__box">
+                <a href="./#" class="items__box">
                   156 Recipes
-                </div>
+                </a>
               </div>
             </div>
 
@@ -273,9 +355,9 @@
               </div>
               <div class="collections__content--items">
                 <h2>Sushi Combos for your next party</h2>
-                <div class="items__box">
+                <a href="./#" class="items__box">
                     156 Recipes
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -292,9 +374,9 @@
       <div class="sunnyhotfix pagePadding">
         <div class="sunnyhotfix__second">
           <div class="footer__leftcontent">
-            <div class="footer__leftcontent--img">
+            <a href="./index.html" class="footer__leftcontent--img">
               <img src="./img/Logo.png" alt="">
-            </div>
+            </a>
             <div class="footer__leftcontent--text">
               <h5>
                 On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
@@ -336,20 +418,16 @@
             <h5>Sunny Hoai Nam - 2020 Tastebite - All rights reserved</h5>
           </div>
           <div class="footer__tag--icon">
-            <h5>face</h5>
-            <h5>tweeter</h5>
-            <h5>instagram</h5>
-            <h5>youtube</h5>
+            <a href="./#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="./#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="./#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./#"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
       </div>
     </footer>
     <script src="./js/searchBar.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/slick.js"></script>
-    <script src="./js/lity.js"></script>
-    <script src="./js/gsap.js"></script>
-    <script src="./js/scrollTrigger.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/render/renderRecipes.js"></script>
   </body>
 </html>
