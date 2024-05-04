@@ -30,7 +30,7 @@ function updateSlider() {
   images.forEach((image, index) => {
     if (index === imageIndex) {
       image.style.display = "block";
-    //   caption.innerHTML = image.alt;
+      caption.innerHTML = image.alt;
     } else {
       image.style.display = "none";
     }

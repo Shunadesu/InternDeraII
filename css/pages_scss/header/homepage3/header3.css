@@ -69,7 +69,7 @@
   border: 1px solid var(--blackColor);
 }
 .header .nav {
-  margin-top: 8rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
