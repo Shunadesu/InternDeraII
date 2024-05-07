@@ -251,3 +251,11 @@ section{
 .font-bold{
   font-weight: bold;
 }
+
+.hidden{
+  display: none;
+}
+
+.fa-heart.liked {
+  color: red;
+}
