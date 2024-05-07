@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+
+    <link rel="stylesheet" href="./css/lity.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/font-awesome.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/pages_scss/indexscss/index.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/searchBar.css">
+
+    <link rel="stylesheet" href="./css/pages_scss/header/header.css">
+    <link rel="stylesheet" href="./css/pages_scss/footer/footer.css">
+
+    <link rel="stylesheet" href="./css/pages_scss/result/result.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2f3b74e382.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header pagePadding">
+        <div class="nav">
+          <a href="/index.html" class="nav__logo">
+            <img src="/img/Logo.png" alt="logo">
+          </a>
+          <div class="nav__bar">
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Homepage</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="/index.html">Homepages 1</a>
+                  <a href="/pages/homepage2.html">Homepages 2</a>
+                  <a href="/pages/homepage3.html">Homepages 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Recipe Page</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="/index.html">Homepages 1</a>
+                  <a href="/pages/homepage2.html">Homepages 2</a>
+                  <a href="/pages/homepage3.html">Homepages 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__bar--items">
+              <p>
+                <div class="flex">
+                  <p>Pages</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </p>
+              <div class="homepage__submenu">
+                <div class="sunnyhotfixsubmenu">
+                  <a href="/pages/category.html">Categories</a>
+                  <a href="/pages/dessert.html">Dessert</a>
+                  <a href="/pages/favorate.html">Favorates</a>
+                  <a href="/pages/aboutpage.html">About Us</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__bar--items"><p>Buy</p></div>
+          </div>
+
+          <div class="nav__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="/login">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </div>
+        </div>
+    </header>
+    <div class="searchBar pagePadding">
+      <div class="search-container"> 
+          <input placeholder="Search.." id="searchInput" name="text" type="text">
+      </div>
+      <ul id="itemList">
+       
+      </ul>
+
+      <p class="closeButton"><i class="fa-regular fa-circle-xmark"></i></p>
+    </div>
+
+    <section class="result pagePadding">
+        <h2>
+            Search Results
+        </h2>
+
+        <div class="searchResult">
+          <div class="search-container"> 
+              <input placeholder="Search.." id="searchResult" name="text" type="text">
+          </div>
+          <h3 id="noResultsMessage"></h3>
+        </div>
+
+        <div class="result__container">
+            
+        </div>
+
+        <div class="result__button">
+          <button id="loadMoreBtn" class="btn-secondary">Load More</button>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="sunnyhotfix pagePadding">
+          <div class="sunnyhotfix__second">
+            <div class="footer__leftcontent">
+              <a href="./index.html" class="footer__leftcontent--img">
+                <img src="./img/Logo.png" alt="">
+              </a>
+              <div class="footer__leftcontent--text">
+                <h5>
+                  On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
+                </h5>
+              </div>
+            
+            </div>
+            <div class="footer__rightcontent">
+              
+              <div class="footer__rightcontent--items">
+                <h5>Tastebite</h5>
+                <a href="/#">About Us</a>
+                <a href="/#">Careers</a>
+                <a href="/#">Contact Us</a>
+                <a href="/#">Feedback</a>
+              </div>
+  
+  
+              <div class="footer__rightcontent--items">
+                <h5>Legal</h5>
+                <a href="/#">Terms</a>
+                <a href="/#">Conditions</a>
+                <a href="/#">Conokies</a>
+                <a href="/#">Copyright</a>
+              </div>
+  
+              <div class="footer__rightcontent--items">
+                <h5>Follow</h5>
+                <a href="/facebook.com/Sunny.pnhn">Facebook</a>
+                <a href="/twitter.com">Twitter</a>
+                <a href="/instagram.com">Instagram</a>
+                <a href="/youtube.com">Youtube</a>
+              </div>
+  
+            </div> 
+          </div>
+          <div class="footer__tag">
+            <div class="footer__tag--name">
+              <h5>Sunny Hoai Nam - 2020 Tastebite - All rights reserved</h5>
+            </div>
+            <div class="footer__tag--icon">
+              <a href="./#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="./#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="./#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="js/result.js"></script>
+    <script src="./js/searchBar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/render/renderResult.js"></script>
+</body>
+
+</html>

@@ -21,4 +21,12 @@
   .fa-circle-xmark:hover{
     color: #FF642F;
   }
+
+.sunny.show{
+  display: block;           
+}
+
+.sunny{
+    display: none;
+}
   
