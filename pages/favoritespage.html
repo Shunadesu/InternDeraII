@@ -4,15 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About page</title>
+    <title>Favorites page</title>
     <link rel="stylesheet" href="../css/resetCss.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"> -->
+    
 
     <link rel="stylesheet" href="../css/lity.css" />
     <link rel="stylesheet" href="../css/slick.css" />
@@ -25,7 +19,7 @@
     <link rel="stylesheet" href="../css/pages_scss/header/header.css">
     <link rel="stylesheet" href="../css/pages_scss/footer/footer.css">
     
-    <link rel="stylesheet" href="../css/About-page.css" />
+    <link rel="stylesheet" href="../css/Favorites-page.css" />
     <link rel="stylesheet" href="../css/RecipeAgainPopUp.css" />
     <link rel="stylesheet" href="../css/DeleteAccountPopUp.css" />
     <link rel="stylesheet" href="../css/UndoDeletePopUp.css" />
@@ -108,110 +102,145 @@
 
       <p class="closeButton"><i class="fa-regular fa-circle-xmark"></i></p>
     </div>
-    <div id="about-container">
-      <div id="about-container-about-text">About</div>
-      <div id="about-container-line"></div>
-      <div class="about-container-label">
-        <h1>We're a group of foodies who love cooking and the internet</h1>
-      </div>
-      <div id="about-container-main-img"></div>
-      <span class="about-container-span-text">Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners. One-pot low heat plenty of time adobo fat raw soften fruit. sweet renders bone-in marrow
-        richness kitchen, fricassee basted pork shoulder. Delicious butternut squash hunk.
-      </span>
-      <div id="about-container-group">
-        <div id="about-container-group-item1">
-          <div class="about-container-group-item1-label">
-            <h1>Simple, Easy Recipes for all</h1> 
-          </div>
-          <span class="about-container-group-item1-span-text">
-            Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk greens. Wine technique snack skewers chuck excess. Oil heat slowly. slices natural delicious, set aside magic tbsp skillet, bay leaves brown centerpiece.
-          </span>
+
+    <div class="FavoritesContainer">
+        <div class="FavoritesPage__Topbar">
+            <div class="FavoritesPage__Topbar--Title">
+                <img src="../img/favoritespage/Favorites-icon-sub.jpg" alt="Favorites-icon">
+                <span>Favorites</span>
+            </div>
+            <select name="sort" class="FavoritesPage__Topbar--Sort">
+                <option value="" selected disabled>Sort</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Soup">Soup</option>
+                <option value="Pancakes">Pancakes</option>
+                <option value="Meat">Meat</option>
+                <option value="Cake">Cake</option>
+            </select>
         </div>
-        <div id="about-container-group-item2">
-          <div id="about-container-group-item2-img"></div>
+        <div class="FavoritesPage__Line"></div>
+        <div class="FavoritesPage__MenuControl">
+            <span class="MenuControl__NumberResults">(22 Recipes)</span>
+            <div class="MenuControl__Select">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <span>Select</span>
+            </div>
+            <div class="MenuControl__All">
+                <i class="fa-regular fa-circle"></i>
+                <span>All</span>
+            </div>
+            <div class="MenuControl__Delete">
+                <i class="fa-regular fa-trash-can"></i>
+                <span>Delete</span>
+            </div>
         </div>
-      </div>
-      <div class="about-container-label">
-        <h1>An incredible team of talented<br> chefs and foodies</h1>
-      </div>
-      <div id="about-container-chefs-and-foodies">
-        <div class="about-container-chefs-and-foodies-itemInColum">
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Ham ChuWon</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Izabella-Tabakova-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Izabella Tabakova</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Fatima-Delgadillo-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Fatima Delgadillo</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Harrison-Phillips-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Harrison Phillips</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Pablo-Cambeiro-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Pablo Cambeiro</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Corabelle-Durrad-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Corabelle Durrad</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
+        <div class="FavoritesPage__ResutlsContent">
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image1.png">
+                <span>Caramel Strawberry Milkshake</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image2.png">
+                <span>Cashew Vegan Rice</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image3.png">
+                <span>Smoked Salmon Salad Sandwich</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image4.png">
+                <span>Salmon in Creamy Sun Dried Tomato Sauce</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image5.png">
+                <span>Healthy Jam Waffle Breakfast</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image8.png">
+                <span>Chocolate and Banana Jar Cake</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image6.png">
+                <span>Caramel Blueberry Scones</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image7.png">
+                <span>Blueberry Carrot Cake</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image9.png">
+                <span>Vegan Cauliflower Salad</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image10.png">
+                <span>Roasted Red Pepper Soup</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image11.png">
+                <span>Eggs and Avocado Toast</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image12.png">
+                <span>Pork Shoulder Cashew Noodles</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image13.png">
+                <span>Toasted Farfalle In Pesto Sauce</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image14.png">
+                <span>Cheesy Bacon Burger Sliders</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image15.png">
+                <span>Fig and Raisins Oatmeal</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image16.png">
+                <span>Silky Smooth Panacotta</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image17.png">
+                <span>Triple Decker Cranberry Cake</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image18.png">
+                <span>Very Berry Healthy Summer Smoothie</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image19.png">
+                <span>Crispy Orange Chips</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image20.png">
+                <span>Tumeric Lavendar Tea</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image21.png">
+                <span>Blue Velvet Brownies</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image22.png">
+                <span>Birthday Cupcakes</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image23.png">
+                <span>Gourmet Fillet in Roasted Almond Sauce</span>
+            </div>
+            <div class="FavoritesPage__ResutlsContent--Item">
+                <img src="../img/recipes/image24.png">
+                <span>Four Ingredient Oatmeal Pancakes</span>
+            </div>
         </div>
-        <div class="about-container-chefs-and-foodies-itemInColum">
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Nonkosi-Joyi-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Nonkosi Joyi</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Wen-Yahui-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Wen Yahui</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Jurrien-Oldhof-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Jurrien Oldhof</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Tallah-Cotton-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Tallah Cotton</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Qin-Shi-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Qin Shi</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
-          <div class="about-container-chefs-and-foodies-itemInColum-item">
-            <div class="about-container-chefs-and-foodies-itemInColum-item-avata" style="background: url(../img/oboutpage/Su-Hua-avata.jpg) 50% / cover no-repeat;"></div>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-name">Su Hua</span>
-            <span class="about-container-chefs-and-foodies-itemInColum-item-position">Chef Extraordinaire</span>
-          </div>
+        <div class="FavoritesPage__LoadMoreContainer">
+            <button>Load More</button>
         </div>
-      </div>
-      <div id="about-container-location-description">
-        <span id="about-container-location-description-locationSpan">Operatring from NYC, Dubai and London</span>
-        <span id="about-container-location-description-descriptionSpan">Gastronomy atmosphere set aside. Slice butternut cooking home. Delicious romantic undisturbed raw platter will meld. Thick Skewers skillet natural, smoker soy sauce wait roux. slices rosette 
-          bone-in simmer precision alongside baby leeks. Crafting renders aromatic enjoyment.</span>
-      </div>
-      <div id="about-container-line2"></div>
-      <div id="about-container-social-media">
-        <a href="../#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-        <a href="../#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
-        <a href="../#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-      </div>
+        
     </div>
+
     <footer class="footer">
       <div class="sunnyhotfix pagePadding">
         <div class="sunnyhotfix__second">

@@ -1,0 +1,122 @@
+.FavoritesContainer {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 150px 8rem 0 8rem;
+}
+.FavoritesPage__Topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.FavoritesPage__Topbar--Title{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+.FavoritesPage__Topbar--Title img{
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+.FavoritesPage__Topbar--Title span {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 25px;
+}
+.FavoritesPage__Line {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #E0E0E0, #FBFBFB) 1;
+}
+.FavoritesPage__Topbar--Sort {
+    background-color: #FFFFFF;
+    font-size: 15px;
+    padding: 5px 5px;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.FavoritesPage__MenuControl{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: center;
+    padding: 35px 0 50px 0;
+}
+.MenuControl__NumberResults{
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #080808;
+}
+.FavoritesPage__MenuControl div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px;
+    align-items: center;
+}
+.FavoritesPage__MenuControl div span{
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #080808;
+}
+.FavoritesPage__MenuControl div i {
+    font-size: 14px;
+    text-align: center;
+    color: #080808;
+}
+.FavoritesPage__MenuControl .MenuControl__Delete i{
+    color: #FF855A;
+}
+.FavoritesPage__ResutlsContent{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.FavoritesPage__ResutlsContent--Item{
+    width: calc((100% - 60px) / 4);
+    min-width: calc((100% - 60px) / 4);
+    max-width: calc((100% - 60px) / 4);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.FavoritesPage__ResutlsContent--Item img{
+    width: 100%;
+    aspect-ratio: 1 / 0.741;
+    border-radius: 5px;
+}
+.FavoritesPage__ResutlsContent--Item span {
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+.FavoritesPage__LoadMoreContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.FavoritesPage__LoadMoreContainer button {
+    background-color: #FFFFFF;
+    font-size: 15px;
+    padding: 8px 32px;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.FavoritesPage__ResutlsContent--Item:hover,
+.FavoritesPage__MenuControl div:hover,
+.FavoritesPage__Topbar--Sort:hover,
+.FavoritesContainer button:hover{
+    cursor: pointer;
+}
