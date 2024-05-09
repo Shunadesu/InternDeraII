@@ -1,0 +1,254 @@
+.ProfileContainer {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 150px 8rem 0 8rem;
+}
+.ProfilePage__Topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.ProfilePage__Topbar--Title {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 25px;
+}
+.ProfilePage__Line {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #E0E0E0, #FBFBFB) 1;
+}
+.ProfilePage__Topbar button {
+    background-color: #FF642F;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 8px 32px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.ProfilePage__Infor{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 60px;
+}
+.ProfilePage__Infor img{
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+.ProfilePage__Infor--ChangePhoto{
+    background-color: #FF642F;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 8px 32px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.ProfilePage__Infor--Delete{
+    background-color: #FFFFFF;
+    font-size: 15px;
+    padding: 6px 30px;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.ProfilePage__Infor2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 70%;
+    max-width: 70%;
+    margin-top: 50px;
+}
+.ProfilePage__Infor2--Group{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 100%;
+}
+.ProfilePage__Infor2--GroupItem{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: calc((100% - 20px)/2);
+}
+.ProfilePage__Infor2--GroupItem span{
+    color: #7F7F7F;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.ProfilePage__Infor2--GroupItem div{
+    width: 100%;
+    border-bottom: 2px solid #E8E8E8;
+    padding: 10px 8px;
+    color: #7F7F7F;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    align-items: center;
+}
+.ProfilePage__Infor2--GroupItem i {
+    font-size: 15px;
+    display: inline-block;
+    width: 17px;
+    min-width: 17px;
+    max-width: 17px;
+    text-align: center;
+}
+.ProfilePage__Infor2--GroupItem input {
+    border: none;
+    color: #7F7F7F;
+    width: calc(100% - 25px);
+    font-size: 14px;
+}
+.ProfilePage__Infor2--GroupItem input:focus{
+    outline: none;
+    color: #080808;
+}
+.ProfilePage__Infor2--GroupItem div {
+    &:focus-within {
+        color: #080808;
+        border-bottom: 2px solid #080808;
+    }
+}
+.ProfilePage__ChangeSpan{
+    width: 70%;
+    max-width: 70%;
+    color: #FF642F;
+    font-size: 13px;
+    font-family: 'Roboto';
+    text-align: right;
+    padding: 8px 0;
+    font-weight: 600;
+}
+.ProfilePage__ConnectedAccounts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 70%;
+    max-width: 70%;
+    margin-top: 90px;
+}
+.ProfilePage__ConnectedAccounts--Title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+.ProfilePage__ConnectedAccounts--Item{
+    width: 100%;
+    border-bottom: 2px solid #E8E8E8;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ProfilePage__ConnectedAccounts--Item div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.ProfilePage__ConnectedAccounts--Item div img[alt="logo-facebook"]{
+    width: 100px;
+    aspect-ratio: 1 / 0.193;
+}
+.ProfilePage__ConnectedAccounts--Item div img[alt="logo-google"] {
+    width: 100px;
+    aspect-ratio: 1 / 0.338;
+}
+.ProfilePage__ConnectedAccounts--Item div span{
+    color: #7F7F7F;
+    font-size: 15px;
+}
+.ProfilePage__ConnectedAccounts--Item .Item--DisconnectButton{
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: #080808;
+}
+.ProfilePage__Newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 70%;
+    margin-top: 90px;
+}
+.ProfilePage__Newsletter--Title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+.ProfilePage__Newsletter--Group{
+    width: 100%;
+    border-bottom: 2px solid #E8E8E8;
+    padding: 12px 0 34px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ProfilePage__Newsletter-Text{
+    font-size: 15px;
+    font-family: 'Roboto';
+}
+.ProfilePage__Newsletter--Group button {
+    background-color: #FFFFFF;
+    font-size: 15px;
+    padding: 8px 32px;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.ProfilePage__BottomBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    max-width: 70%;
+    margin-top: 50px;
+}
+.ProfilePage__BottomBar--SignOut{
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px;
+    align-items: center;
+}
+.ProfilePage__BottomBar--SignOut span{
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: #080808;
+}
+.ProfilePage__BottomBar--DeleteButton{
+    color: #FF642F;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+.ProfilePage__BottomBar--SignOut i {
+    font-size: 20px;
+    display: inline-block;
+    width: 22px;
+    min-width: 22px;
+    max-width: 22px;
+    text-align: center;
+}
+.ProfilePage__BottomBar--SignOut:hover,
+.ProfilePage__BottomBar--DeleteButton:hover,
+.ProfilePage__ConnectedAccounts--Item .Item--DisconnectButton:hover,
+.ProfilePage__ChangeSpan:hover,
+.ProfileContainer button:hover{
+    cursor: pointer;
+}

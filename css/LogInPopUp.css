@@ -1,0 +1,154 @@
+.LogInPopUp{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 999;
+    display: none;
+}
+.LogInPopUpContent {
+    border-radius: 16px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    width: 500px;
+    height: 640px;
+    padding: 60px 50px;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.LogInPopUpClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+}
+.LogInPopUpClose img{
+    width: 16px;
+    height: 16px;
+}
+.LogInPopUp__title{
+    font-size: 38px;
+    font-weight: 700;
+}
+.LogInPopUpContent i{
+    font-size: 25px;
+    display: inline-block;
+    width: 26px;
+    min-width: 26px;
+    max-width: 26px;
+    text-align: center;
+}
+.LogInPopUpContent input{
+    border: none;
+    color: #7F7F7F;
+    width: calc(100% - 38px);
+    font-size: 17px;
+}
+.LogInPopUpContent input:focus{
+    outline: none;
+}
+.LogInPopUp__Email,
+.LogInPopUp__PassWord{
+    width: 100%;
+    border-bottom: 2px solid #E8E8E8;
+    padding: 14px 10px;
+    color: #7F7F7F;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+.LogInPopUp__LogInButton{
+    background-color: #FF642F;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 14px 46px;
+    width: 150px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    /* white-space: nowrap; */
+}
+.LogInPopUp__ForgotPasswordText{
+    color: #FF642F;
+    font-size: 14px;
+    font-family: 'Roboto';
+    width: 100%;
+    text-align: right;
+    margin-top: -25px;
+}
+.LogInPopUp__ForgotPassText{
+    font-size: 18px;
+    margin-top: -5px;
+}
+.LogInPopUp__Media{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+.LogInPopUp__Media--Facebook,
+.LogInPopUp__Media--Google{
+    background-color: #F3F3F3;
+    width: 43%;
+    aspect-ratio: 1 / 0.3;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.LogInPopUp__Media--Facebook img{
+    height: 36%;
+    aspect-ratio: 1 / 1.93;
+
+}
+.LogInPopUp__Media--Facebook span{
+    color: #3B5998;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+.LogInPopUp__Media--Google img{
+    height: 35%;
+    aspect-ratio: 1 / 1;
+
+}
+.LogInPopUp__Media--Google span{
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+.LogInPopUp__Notes--text{
+    font-size: 18px;
+}
+.LogInPopUp__Notes{
+    margin-top: 20px;
+}
+.LogInPopUp__Notes--SignUp{
+    font-size: 18px;
+    white-space: nowrap;
+    color: #FF642F;
+}
+.LogInPopUp__ForgotPasswordText:hover,
+.LogInPopUpClose:hover,
+.LogInPopUp__LogInButton:hover,
+.LogInPopUp__Media--Facebook:hover,
+.LogInPopUp__Media--Google:hover,
+.LogInPopUp__Notes:hover{
+    cursor: pointer;
+}
