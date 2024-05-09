@@ -12,6 +12,9 @@
     border: 1px solid #FF642F;
     border-radius: 6px 0 0 6px;
     background-color: white;
+
+    /* font-family: "Playfair Display", serif;
+    font-style: normal; */
   }
   
   .button--submit {
