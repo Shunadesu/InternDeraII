@@ -89,10 +89,12 @@ searchInput.addEventListener('keyup', function() {
 });
 
 
+
 search.addEventListener('click', function() {
   const searchText = searchInput.value.trim().toLowerCase();
   if (searchText !== '') {
       // Redirect to the 'result' page
       redirectToResultPage(searchText);
+
   }
 });

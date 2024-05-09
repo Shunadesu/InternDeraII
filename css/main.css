@@ -250,6 +250,7 @@ section{
 
 .font-bold{
   font-weight: bold;
+
 }
 
 .hidden{
@@ -258,4 +259,5 @@ section{
 
 .fa-heart.liked {
   color: red;
+
 }
