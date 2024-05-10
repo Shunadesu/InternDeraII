@@ -4,7 +4,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 150px 8rem 0 8rem;
+    /* padding: 150px 8rem 0 8rem; */
+    padding-top: 150px;
+    padding-bottom: 0;
 }
 .FavoritesPage__Topbar {
     display: flex;
@@ -22,13 +24,14 @@
 }
 .FavoritesPage__Topbar--Title img{
     width: 40px;
+    height: auto;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
 .FavoritesPage__Topbar--Title span {
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 .FavoritesPage__Line {
     border-width: 2px;
@@ -77,26 +80,27 @@
 .FavoritesPage__ResutlsContent{
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 30px;
     row-gap: 50px;
     flex-wrap: wrap;
     width: 100%;
 }
 .FavoritesPage__ResutlsContent--Item{
-    width: calc((100% - 60px) / 4);
-    min-width: calc((100% - 60px) / 4);
-    max-width: calc((100% - 60px) / 4);
+    width: calc((100% - 90px) / 4);
+    min-width: calc((100% - 90px) / 4);
+    max-width: calc((100% - 90px) / 4);
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 .FavoritesPage__ResutlsContent--Item img{
     width: 100%;
+    height: auto;
     aspect-ratio: 1 / 0.741;
     border-radius: 5px;
 }
 .FavoritesPage__ResutlsContent--Item span {
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Roboto';
     font-weight: 600;
 }
@@ -124,17 +128,27 @@
     .FavoritesPage__Topbar {
         margin-bottom: 16px;
     }
+    .FavoritesPage__Topbar--Title span {
+        font-size: 25px;
+    }
+    .FavoritesPage__Topbar--Title img {
+        width: 32px;
+    }
     .FavoritesPage__MenuControl {
         column-gap: 32px;
         padding: 25px 0 35px 0;
     }
     .FavoritesPage__ResutlsContent {
         row-gap: 40px;
+        column-gap: 20px;
     }
     .FavoritesPage__ResutlsContent--Item {
         width: calc((100% - 40px) / 3);
         min-width: calc((100% - 40px) / 3);
         max-width: calc((100% - 40px) / 3);
+    }
+    .FavoritesPage__ResutlsContent--Item span {
+        font-size: 14px;
     }
     .FavoritesPage__LoadMoreContainer {
         margin-top: 40px;
@@ -197,58 +211,3 @@
         border: 1px solid;
     }
 }
-
-
-.recipes {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .recipes h2 {
-    width: 100%;
-    display: flex;
-    justify-content: start;
-  }
-  .recipes .recipes__container {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
-    width: 100%;
-  }
-  .recipes .recipes__container .recipes__content {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .recipes .recipes__container .recipes__content .recipes__content--img {
-    width: 400px;
-    height: 300px;
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-  .recipes .recipes__container .recipes__content .recipes__content--img img {
-    transition: all 0.3s ease-in-out;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .recipes .recipes__container .recipes__content .recipes__content--img img:hover {
-    scale: 1.1;
-  }
-  .recipes .recipes__container .recipes__content .recipes__content--text {
-    font-size: 22px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-  }
-  .recipes .btn-secondary {
-    width: 200px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 16px;
-  }/*# sourceMappingURL=index.css.map */
