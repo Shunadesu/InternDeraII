@@ -107,7 +107,7 @@ const categoriesData = [
 
 const rendercategories = categoriesData.map((data) => {
     return `
-    <a href="/#" class="categories__container--content">
+    <a href="../pages/dessert.html" class="categories__container--content">
         <div class="imgDiv">
             <img src=${data.img} alt="">
         </div>

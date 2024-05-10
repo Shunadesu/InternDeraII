@@ -41,4 +41,83 @@
 }
 .categories .categories__container .categories__container--content p {
   font-weight: bold;
+  font-size: 22px;
+}
+
+.dessert .dessert__imgDiv {
+  width: 100%;
+  height: 500px;
+}
+.dessert .dessert__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.dessert .dessert__container .dessert__container--text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.dessert .dessert__container .dessert__container--text .heading {
+  align-items: flex-end;
+}
+.dessert .dessert__container .dessert__container--text .content {
+  display: flex;
+  justify-content: space-between;
+}
+.dessert .dessert__container .dessert__container--text .content p {
+  max-width: 1000px;
+}
+.dessert .dessert__container .dessert__container--text .content .select_div select {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  width: 200px;
+  padding: 1rem 0;
+  font-size: 18px;
+  border: 2px solid var(--primaryColor);
+}
+.dessert .dessert__container .dessert__container--content {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  width: 100%;
+  padding: 0 4rem;
+}
+.dessert .dessert__container .dessert__container--content .dessert__content {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.dessert .dessert__container .dessert__container--content .dessert__content .dessert__content--img {
+  width: 350px;
+  height: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.dessert .dessert__container .dessert__container--content .dessert__content .dessert__content--img img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dessert .dessert__container .dessert__container--content .dessert__content .dessert__content--img img:hover {
+  scale: 1.1;
+}
+.dessert .dessert__container .dessert__container--content .dessert__content .dessert__content--text {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.dessert .dessert__container .btn-secondary {
+  width: 200px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 16px;
+  align-self: center;
 }/*# sourceMappingURL=categories.css.map */

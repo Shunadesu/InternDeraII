@@ -202,31 +202,42 @@ ul li{
   padding-right: 8rem;
 }
 
-@media screen and (max-width: 1024xp){
+@media screen and (max-width: 1424px){
+  .pagePadding{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px){
   .pagePadding{
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
 
-@media screen and (max-width: 767xp) {
+@media screen and (max-width: 767px) {
+  .pagePadding{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  h1{
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 467px) {
   .pagePadding{
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-@media screen and (max-width: 467xp) {
+@media screen and (max-width: 350px) {
   .pagePadding{
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-}
-
-@media screen and (max-width: 350xp) {
-  .pagePadding{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 }
 
@@ -259,5 +270,9 @@ section{
 
 .fa-heart.liked {
   color: red;
+}
 
+.wrapper{
+  max-width: 2000px;margin: 0 auto;
+  position: relative;
 }
