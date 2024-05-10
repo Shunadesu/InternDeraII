@@ -65,6 +65,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    align-items: center;
 }
 #about-container-group-item2{
     width: 50%;
@@ -133,12 +134,12 @@
 #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-name{
     font-weight: bold;
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Roboto';
 }
 #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-position{
     text-align: center;
-    font-size: 13.5px;
+    font-size: 15px;
     color: #AAAAAA;
     font-family: 'Roboto';
 }
@@ -152,11 +153,11 @@
 }
 #about-container-location-description-locationSpan{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Roboto';
 }
 #about-container-location-description-descriptionSpan{
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
     color: #4C4C4C;
     font-family: 'Roboto';
@@ -206,6 +207,9 @@
         flex-direction: column;
         row-gap: 20px;
     }
+    #about-container-group .about-container-group-item1-label {
+        max-width: 100%;
+    }
     #about-container-group-item2 {
         width: 100%;
         display: flex;
@@ -251,6 +255,7 @@
     #about-container-group .about-container-group-item1-span-text {
         font-size: 19px;
         margin-bottom: 20px;
+        max-width: 100%;
     }
     #about-container-chefs-and-foodies {
         padding: 20px 0;
@@ -261,8 +266,20 @@
     #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item {
         width: calc((100% - 84px) / 3);
     }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-name {
+        font-size: 15px;
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-position {
+        font-size: 13.2px;
+    }
     #about-container-location-description {
         margin-top: 70px;
+    }
+    #about-container-location-description-locationSpan {
+        font-size: 21px;
+    }
+    #about-container-location-description-descriptionSpan {
+        font-size: 15px;
     }
 }
   
@@ -321,10 +338,10 @@
         row-gap: 14px;
     }
     #about-container-location-description-locationSpan {
-        font-size: 14px;
+        font-size: 16px;
     }
     #about-container-location-description-descriptionSpan {
-        font-size: 10px;
+        font-size: 11px;
         line-height: 14px;
     }
     #about-container-line2 {

@@ -54,7 +54,7 @@
     padding: 35px 0 50px 0;
 }
 .MenuControl__NumberResults{
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Roboto';
     color: #080808;
 }
@@ -65,12 +65,12 @@
     align-items: center;
 }
 .FavoritesPage__MenuControl div span{
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Roboto';
     color: #080808;
 }
 .FavoritesPage__MenuControl div i {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     color: #080808;
 }
@@ -137,6 +137,15 @@
     .FavoritesPage__MenuControl {
         column-gap: 32px;
         padding: 25px 0 35px 0;
+    }
+    .MenuControl__NumberResults {
+        font-size: 14px;
+    }
+    .FavoritesPage__MenuControl div i {
+        font-size: 14px;
+    }
+    .FavoritesPage__MenuControl div span {
+        font-size: 14px;
     }
     .FavoritesPage__ResutlsContent {
         row-gap: 40px;
