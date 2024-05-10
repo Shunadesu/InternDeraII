@@ -1,0 +1,333 @@
+#about-container{
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 150px 8rem 0 8rem;
+}
+#about-container-about-text{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-family:"Roboto";
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#about-container-line{
+    border-width: 2px; /* Độ dày của border */
+    border-style: solid; /* Kiểu border */
+    border-image: linear-gradient(to bottom, #E0E0E0, #FBFBFB) 1;
+}
+#about-container .about-container-label{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+#about-container-main-img{
+    width: 100%;
+    aspect-ratio: 1 / 0.4;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+#about-container .about-container-span-text{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 120px;
+    font-family: 'Roboto';
+}
+#about-container-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+    align-items: center;
+    column-gap: 4%;
+}
+#about-container-group-item1{
+    width: 46%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+#about-container-group-item2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+#about-container-group-item2-img{
+    width: 100%;
+    aspect-ratio: 1 / 0.83;
+    box-sizing: border-box;
+}
+#about-container-group .about-container-group-item1-label{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+#about-container-group .about-container-group-item1-span-text{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+}
+#about-container-chefs-and-foodies{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 30px 0;
+}
+#about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+#about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item{
+    width: calc((100% - 100px)/6);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6.5px;
+    justify-content: center;
+}
+#about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-avata{
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Tỉ lệ chiều rộng/chiều cao */
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: url(../../img/aboutpage/Ham-ChuWon-avata.jpg) 50% / cover no-repeat;
+    /* border: 1px solid #ffffff;  */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Hiệu ứng đổ bóng */
+}
+#about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-name{
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+#about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-position{
+    text-align: center;
+    font-size: 12px;
+    color: #AAAAAA;
+    font-family: 'Roboto';
+}
+#about-container-location-description{
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 100px;
+}
+#about-container-location-description-locationSpan{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+#about-container-location-description-descriptionSpan{
+    font-size: 14px;
+    line-height: 20px;
+    color: #4C4C4C;
+    font-family: 'Roboto';
+}
+#about-container-line2{
+    border-width: 1px; /* Độ dày của border */
+    border-style: solid; /* Kiểu border */
+    border-image: linear-gradient(to bottom, #F5F5F5, #EEEEEE, #E9E9E9) 1;
+    margin: 35px 0;
+    width: 60%;
+}
+#about-container-social-media{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+#about-container-social-media .fa-facebook:hover{
+    animation: bounce 0.5s ease;
+    color: #4267B2;
+}
+#about-container-social-media .fa-twitter:hover{
+    animation: bounce 0.5s ease;
+    color: #00acee;
+}
+#about-container-social-media .fa-instagram:hover{
+    animation: bounce 0.5s ease;
+    color: #e4405f;
+}
+@media screen and (max-width: 1024px) {
+    #about-container-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+    #about-container-group-item1 {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #about-container-group-item2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item {
+        width: calc((100% - 40px) / 3);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        row-gap: 6.5px;
+        justify-content: center;
+    }
+    #about-container-about-text {
+        margin-bottom: 16px;
+    }
+    #about-container .about-container-label {
+        padding: 24px 0;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    #about-container-main-img {
+        margin-bottom: 24px;
+    }
+    #about-container .about-container-span-text {
+        font-size: 19px;
+        margin-bottom: 40px;
+    }
+    #about-container-group {
+        row-gap: 14px;
+        margin-bottom: 50px;
+    }
+    #about-container-group .about-container-group-item1-span-text {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    #about-container-chefs-and-foodies {
+        padding: 20px 0;
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum {
+        column-gap: 42px;
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item {
+        width: calc((100% - 84px) / 3);
+    }
+    #about-container-location-description {
+        margin-top: 70px;
+    }
+}
+  
+@media screen and (max-width: 500px) {
+    #about-container-about-text {
+        margin-bottom: 14px;
+        font-size: 23px;
+    }
+    #about-container .about-container-label {
+        padding: 18px 0;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    #about-container-main-img {
+        margin-bottom: 18px;
+    }
+    #about-container .about-container-span-text {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 26px;
+    }
+    #about-container-group {
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
+    #about-container-group-item1 {
+        row-gap: 15px;
+    }
+    #about-container-group .about-container-group-item1-span-text {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+    #about-container-chefs-and-foodies {
+        padding: 10px 0;
+        row-gap: 30px;
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum {
+        column-gap: 23px;
+        row-gap: 30px;
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item {
+        width: calc((100% - 46px) / 3);
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-name {
+        font-size: 12px;
+    }
+    #about-container-chefs-and-foodies .about-container-chefs-and-foodies-itemInColum-item-position {
+        font-size: 9px;
+    }
+    #about-container-location-description {
+        margin-top: 48px;
+        width: 100%;
+        row-gap: 14px;
+    }
+    #about-container-location-description-locationSpan {
+        font-size: 14px;
+    }
+    #about-container-location-description-descriptionSpan {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    #about-container-line2 {
+        margin: 30px 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 467px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}
