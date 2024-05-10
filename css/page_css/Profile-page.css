@@ -4,7 +4,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 150px 8rem 0 8rem;
+    /* padding: 150px 8rem 0 8rem; */
+    padding-top: 150px;
+    padding-bottom: 0;
 }
 .ProfilePage__Topbar{
     display: flex;
@@ -20,7 +22,7 @@
     box-sizing: border-box;
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 .ProfilePage__Line {
     border-width: 2px;
@@ -45,6 +47,7 @@
 }
 .ProfilePage__Infor img{
     width: 100px;
+    height: auto;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
@@ -163,15 +166,18 @@
 }
 .ProfilePage__ConnectedAccounts--Item div img[alt="logo-facebook"]{
     width: 100px;
+    height: auto;
     aspect-ratio: 1 / 0.193;
 }
 .ProfilePage__ConnectedAccounts--Item div img[alt="logo-google"] {
     width: 100px;
+    height: auto;
     aspect-ratio: 1 / 0.338;
 }
 .ProfilePage__ConnectedAccounts--Item div span{
     color: #7F7F7F;
     font-size: 15px;
+    font-family: 'Roboto';
 }
 .ProfilePage__ConnectedAccounts--Item .Item--DisconnectButton{
     font-size: 15px;
@@ -251,4 +257,167 @@
 .ProfilePage__ChangeSpan:hover,
 .ProfileContainer button:hover{
     cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+    .ProfilePage__Topbar {
+        margin-bottom: 16px;
+    }
+    .ProfilePage__Topbar--Title {
+        font-size: 25px;
+    }
+    .ProfilePage__Topbar button {
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+    .ProfilePage__Infor {
+        margin-top: 45px;
+    }
+    .ProfilePage__Infor2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .ProfilePage__ChangeSpan {
+        width: 100%;
+        max-width: 100%;
+    }
+    .ProfilePage__ConnectedAccounts {
+        row-gap: 16px;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 60px;
+    }
+    .ProfilePage__ConnectedAccounts--Item {
+        padding: 12px 0;
+    }
+    .ProfilePage__Newsletter {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 74px;
+    }
+    .ProfilePage__Newsletter--Group {
+        padding: 10px 0 25px 0;
+    }
+    .ProfilePage__BottomBar {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 42px;
+    }
+}
+@media screen and (max-width: 500px) {
+
+
+    .ProfilePage__Topbar {
+        margin-bottom: 14px;
+    }
+    .ProfilePage__Topbar--Title {
+        font-size: 23px;
+    }
+    .ProfilePage__Topbar button {
+        font-size: 12px;
+        padding: 7.2px 25px;
+    }
+    .ProfilePage__Infor {
+        column-gap: 15px;
+        margin-top: 40px;
+    }
+    .ProfilePage__Infor img {
+        width: 60px;
+    }
+    .ProfilePage__Infor--ChangePhoto {
+        font-size: 12px;
+        padding: 7.2px 25px;
+    }
+    .ProfilePage__Infor--Delete {
+        font-size: 12px;
+        padding: 6.4px 25px;
+        border: 1px solid;
+    }
+    .ProfilePage__Infor2 {
+        row-gap: 30px;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 60px;
+    }
+    .ProfilePage__Infor2--Group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        width: 100%;
+    }
+    .ProfilePage__Infor2--GroupItem {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        width: 100%;
+        min-width: 100%;
+    }
+    .ProfilePage__ConnectedAccounts {
+        row-gap: 14px;
+        margin-top: 40px;
+    }
+    .ProfilePage__ConnectedAccounts--Title {
+        font-size: 18px;
+    }
+    .ProfilePage__ConnectedAccounts--Item div {
+        row-gap: 8px;
+    }
+    .ProfilePage__ConnectedAccounts--Item .Item--DisconnectButton {
+        font-size: 12.9px;
+    }
+    .ProfilePage__ConnectedAccounts--Item div img[alt="logo-facebook"] {
+        width: 80px;
+    }
+    .ProfilePage__ConnectedAccounts--Item div img[alt="logo-google"] {
+        width: 80px;
+    }
+    .ProfilePage__ConnectedAccounts--Item div span {
+        font-size: 12px;
+    }
+    .ProfilePage__Newsletter {
+        margin-top: 50px;
+    }
+    .ProfilePage__Newsletter--Title {
+        font-size: 18px;
+    }
+    .ProfilePage__Newsletter-Text {
+        font-size: 12.9px;
+    }
+    .ProfilePage__Newsletter--Group button {
+        font-size: 12px;
+        padding: 6.4px 25px;
+        border: 1px solid;
+    }
+    .ProfilePage__Newsletter--Group {
+        width: 100%;
+        border-bottom: 2px solid #E8E8E8;
+        padding: 22px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .ProfilePage__BottomBar--SignOut {
+        column-gap: 3.6px;
+    }
+    .ProfilePage__BottomBar--SignOut i {
+        font-size: 15px;
+        display: inline-block;
+        width: 16.4px;
+        min-width: 16.4px;
+        max-width: 16.4px;
+        text-align: center;
+    }
+    .ProfilePage__BottomBar--SignOut span {
+        font-size: 12.9px;
+    }
+    .ProfilePage__BottomBar--DeleteButton {
+        font-size: 12.9px;
+    }
+
 }

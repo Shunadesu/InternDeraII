@@ -6,7 +6,7 @@
     column-gap: 120px;
     padding: 10px 16px;
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     top: 4vh;
     left: 50%;
     transform: translate(-50%, 0);

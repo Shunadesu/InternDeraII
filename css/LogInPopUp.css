@@ -116,8 +116,9 @@
 }
 .LogInPopUp__Media--Facebook img{
     height: 36%;
+    width: auto;
     aspect-ratio: 1 / 1.93;
-
+    object-fit: cover;
 }
 .LogInPopUp__Media--Facebook span{
     color: #3B5998;
@@ -127,7 +128,8 @@
 .LogInPopUp__Media--Google img{
     height: 35%;
     aspect-ratio: 1 / 1;
-
+    width: auto;
+    object-fit: cover;
 }
 .LogInPopUp__Media--Google span{
     font-size: 16px;
