@@ -95,8 +95,9 @@
             gap: 4rem;
             align-items: center;
             .threecols__items--content{     
+                width: 100%;
                 .threecols__items--image{
-                    width: 600px;
+                    width: 100%;
                     height: 350px;
                     border-radius: 2rem;
                     overflow: hidden;
@@ -115,8 +116,9 @@
             gap: 4rem;
             align-items: center;
             .threecols__items--content{     
+                width: 100%;
                 .threecols__items--image{
-                    width: 450px;
+                    width: 100%;
                     height: 280px;
                     border-radius: 2rem;
                     overflow: hidden;
@@ -135,8 +137,9 @@
             gap: 4rem;
             align-items: center;
             .threecols__items--content{     
+                width: 100%;
                 .threecols__items--image{
-                    width: 300px;
+                    width: 100%;
                     height: 230px;
                     border-radius: 2rem;
                     overflow: hidden;
@@ -145,7 +148,6 @@
         }
     }
 }
-
 .inbox{
     display: flex;
     justify-content: center;
@@ -1138,7 +1140,7 @@
                         display: flex;
                         flex-direction: column;
                         gap: 2rem;
-                        padding: 2rem 7rem;
+                        padding: 2rem 3rem;
                     }
                 }
             }

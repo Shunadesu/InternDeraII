@@ -142,6 +142,9 @@
   .banner .banner__content {
     padding: 4rem;
   }
+  .banner .banner__content h2 {
+    font-size: 42px;
+  }
   .banner .banner_icon {
     position: absolute;
     bottom: 1rem;
@@ -223,8 +226,11 @@
     gap: 4rem;
     align-items: center;
   }
+  .threecols .threecols__items .threecols__items--content {
+    width: 100%;
+  }
   .threecols .threecols__items .threecols__items--content .threecols__items--image {
-    width: 600px;
+    width: 100%;
     height: 350px;
     border-radius: 2rem;
     overflow: hidden;
@@ -238,8 +244,11 @@
     gap: 4rem;
     align-items: center;
   }
+  .threecols .threecols__items .threecols__items--content {
+    width: 100%;
+  }
   .threecols .threecols__items .threecols__items--content .threecols__items--image {
-    width: 450px;
+    width: 100%;
     height: 280px;
     border-radius: 2rem;
     overflow: hidden;
@@ -253,8 +262,11 @@
     gap: 4rem;
     align-items: center;
   }
+  .threecols .threecols__items .threecols__items--content {
+    width: 100%;
+  }
   .threecols .threecols__items .threecols__items--content .threecols__items--image {
-    width: 300px;
+    width: 100%;
     height: 230px;
     border-radius: 2rem;
     overflow: hidden;
@@ -309,8 +321,31 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
+  }
+  .categories .categories__content .categories__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .categories .categories__content .categories__items .categories__items--image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  .categories .categories__content .categories__items .categories__items--image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .categories .categories__content .categories__items p {
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 .inbox {

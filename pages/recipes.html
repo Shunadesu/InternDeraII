@@ -4,8 +4,542 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes Page</title>
+
+    <link rel="stylesheet" href="../css/lity.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pages_scss/indexscss/index.css">
+    <link rel="stylesheet" href="../css/input.css">
+    <link rel="stylesheet" href="../css/searchBar.css">
+
+    <link rel="stylesheet" href="../css/pages_scss/header/header.css">
+    <link rel="stylesheet" href="../css/pages_scss/footer/footer.css">
+
+    <link rel="stylesheet" href="../css/pages_scss/categories/categories.css">
+    <link rel="stylesheet" href="../css/pages_scss/blog/blog.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2f3b74e382.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="wrapper">
+        <header class="header pagePadding">
+            <div class="nav">
+              <a href="/index.html" class="nav__logo">
+                <img src="../img/Logo.png" alt="logo">
+              </a>
+              <div class="nav__bar">
+                <div class="nav__bar--items">
+                  <p>
+                    <div class="flex">
+                      <p>Homepage</p>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </p>
+                  <div class="homepage__submenu">
+                    <div class="sunnyhotfixsubmenu">
+                      <a href="/index.html">Homepages 1</a>
+                      <a href="/pages/homepage2.html">Homepages 2</a>
+                      <a href="/pages/homepage3.html">Homepages 3</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav__bar--items">
+                  <p>
+                    <div class="flex">
+                      <p>Recipe Page</p>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </p>
+                  <div class="homepage__submenu">
+                    <div class="sunnyhotfixsubmenu">
+                      <a href="/pages/blog.html">Blog</a>
+                      <a href="/pages/recipes.html">Recipes</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav__bar--items">
+                  <p>
+                    <div class="flex">
+                      <p>Pages</p>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </p>
+                  <div class="homepage__submenu">
+                    <div class="sunnyhotfixsubmenu">
+                      <a href="/pages/category.html">Categories</a>
+                      <a href="/pages/dessert.html">Dessert</a>
+                      <a href="/pages/favoritespage.html">Favorates</a>
+                      <a href="/pages/aboutpage.html">About Us</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav__bar--items"><p>Buy</p></div>
+              </div>
     
+              <div class="nav__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="/login">
+                  <i class="fa-regular fa-user"></i>
+                </a>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+        </header>
+        <div class="searchBar pagePadding">
+        <div class="search-container"> 
+            <input placeholder="Search.." id="searchInput" name="text" type="text">
+        </div>
+        <ul id="itemList">
+        
+        </ul>
+    
+        <p class="closeButton"><i class="fa-regular fa-circle-xmark"></i></p>
+        </div>
+        <div class="navBar pagePadding">
+            <div class="nav__bar">
+              <div class="nav__bar--items">
+                <p>
+                  <div class="flex">
+                    <p>Homepage</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </p>
+                <div class="homepage__submenu">
+                  <div class="sunnyhotfixsubmenu">
+                    <a href="/index.html">Homepages 1</a>
+                    <a href="../pages/homepage2.html">Homepages 2</a>
+                    <a href="../pages/homepage3.html">Homepages 3</a>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__bar--items">
+                <p>
+                  <div class="flex">
+                    <p>Recipe Page</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </p>
+                <div class="homepage__submenu">
+                  <div class="sunnyhotfixsubmenu">
+                    <a href="../pages/blog.html">Blog</a>
+                    <a href="../pages/recipes.html">Recipes</a>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__bar--items">
+                <p>
+                  <div class="flex">
+                    <p>Pages</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </p>
+                <div class="homepage__submenu">
+                  <div class="sunnyhotfixsubmenu">
+                    <a href="../pages/category.html">Categories</a>
+                    <a href="../pages/dessert.html">Dessert</a>
+                    <a href="../pages/favoritespage.html">Favorates</a>
+                    <a href="../pages/aboutpage.html">About Us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__bar--items"><p>Buy</p></div>
+            </div>
+    
+            <p class="closeNav"><i class="fa-regular fa-circle-xmark"></i></p>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="headding pagePadding">
+            <p>Sunny Pham Nam </p>
+            <div class="headding__content flex">
+                <h1>Strawberry Cream Cheesecake</h1>
+                <div class="heading__icon flex">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+            </div>
+
+            <div class="heading__user flex">
+                <div class="user flex">
+                    <div class="imgDiv">
+                        <img src="../img/user.jpg" alt="sunny__img">
+                    </div>
+                    <h4>Sunny Pham Nam</h4>
+                </div>
+                <div class="icon flex">
+                    <div class="flex">
+                    <i class="fa-regular fa-message"></i>
+                    <p>456</p>
+                    </div>
+                    <div class="flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>Yesterday</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="heading__text">
+                One thing I learned living in the Canarsle section of Brooklyn, NY was how to cook a good Italian meal. Here is a recipe I created after having this dish in a restaurant. Enjoy!
+            </p>
+        </section>
+
+        <section class="videosunny pagePadding">
+
+            <video src="../video/strawcake.mp4" type="video/mp4" id="cakeVideo"></video>
+            <div class="play ">
+                <i class="fa-regular fa-circle-play"></i>
+            </div>
+
+
+            <div class="pause">
+                <i class="fa-regular fa-circle-pause"></i>            
+            </div>
+        </section>
+
+
+        <section class="comments pagePadding">
+            <h1>Comments</h1>
+
+            <div class="comments__content flex">
+                <div class="user__imgDiv">
+                    <img src="../img/user.jpg" alt="user">
+                </div>
+
+                <div class="comments__div">
+                    <div>
+                        <h3>Sunny Hoai Nam</h3>
+                        <p style="opacity: 0.6;">45 min ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                    <div class="comments__content--more flex">
+                        <div class="reply comit flex">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Reply (2)</p>
+                        </div>
+
+                        <div class="like flex">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48</p>
+                        </div>
+
+                        <div class="more flex">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- onclick add reply -->
+            <div class="comments__content pagePadding flex setreply hidden">
+                <div class="user__imgDiv">
+                    <img src="../img/another__user.jpg" alt="user">
+                </div>
+
+                <div class="comments__div">
+                    <div>
+                        <h3>Sunny Hoai Nam</h3>
+                        <p style="opacity: 0.6;">45 min ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                    <div class="comments__content--more flex">
+                        <div class="reply flex">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Reply (2)</p>
+                        </div>
+
+                        <div class="like flex">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48</p>
+                        </div>
+
+                        <div class="more flex">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__content pagePadding flex setreply hidden">
+                <div class="user__imgDiv">
+                    <img src="../img/another__user2.jpeg" alt="user">
+                </div>
+
+                <div class="comments__div">
+                    <div>
+                        <h3>Sunny Hoai Nam</h3>
+                        <p style="opacity: 0.6;">45 min ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                    <div class="comments__content--more flex">
+                        <div class="reply flex">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Reply (2)</p>
+                        </div>
+
+                        <div class="like flex">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48</p>
+                        </div>
+
+                        <div class="more flex">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+            <!-- end of it -->
+            <div class="comments__content flex">
+                <div class="user__imgDiv">
+                    <img src="../img/another__user3.jpeg" alt="user">
+                </div>
+
+                <div class="comments__div">
+                    <div>
+                        <h3>Sunny Hoai Nam</h3>
+                        <p style="opacity: 0.6;">45 min ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                    <div class="comments__content--more flex">
+                        <div class="reply flex">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Reply (2)</p>
+                        </div>
+
+                        <div class="like flex">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48</p>
+                        </div>
+
+                        <div class="more flex">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__content flex">
+                <div class="user__imgDiv">
+                    <img src="../img/another__user4.jpeg" alt="user">
+                </div>
+
+                <div class="comments__div">
+                    <div>
+                        <h3>Sunny Hoai Nam</h3>
+                        <p style="opacity: 0.6;">45 min ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                    <div class="comments__content--more flex">
+                        <div class="reply flex">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Reply (2)</p>
+                        </div>
+
+                        <div class="like flex">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48</p>
+                        </div>
+
+                        <div class="more flex">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__content flex">
+                <div class="user__imgDiv">
+                    <img src="../img/user.jpg" alt="user">
+                </div>
+
+                <div class="comments__div">
+                    <div>
+                        <h3>Sunny Hoai Nam</h3>
+                        <p style="opacity: 0.6;">45 min ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                    <div class="comments__content--more flex">
+                        <div class="reply flex">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Reply (2)</p>
+                        </div>
+
+                        <div class="like flex">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48</p>
+                        </div>
+
+                        <div class="more flex">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__content flex">
+                <div class="user__imgDiv">
+                    <img src="../img/user.jpg" alt="user">
+                </div>
+
+                <div class="comments__div">
+                    <div>
+                        <h3>Sunny Hoai Nam</h3>
+                        <p style="opacity: 0.6;">45 min ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                    <div class="comments__content--more flex">
+                        <div class="reply flex">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Reply (2)</p>
+                        </div>
+
+                        <div class="like flex">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48</p>
+                        </div>
+
+                        <div class="more flex">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__content flex">
+                <div class="user__imgDiv">
+                    <img src="../img/user.jpg" alt="user">
+                </div>
+
+                <div class="comments__div">
+                    <div>
+                        <h3>Sunny Hoai Nam</h3>
+                        <p style="opacity: 0.6;">45 min ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                    <div class="comments__content--more flex">
+                        <div class="reply flex">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Reply (2)</p>
+                        </div>
+
+                        <div class="like flex">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48</p>
+                        </div>
+
+                        <div class="more flex">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="commentDisplay"></div>
+
+            <div class="btn__div">
+                <div class="btn-secondary">Load 25 more comments</div>
+            </div>
+        </section>
+
+        <section class="writecomment pagePadding">
+            <div class="write__heading flex">
+                <h2>Write a comment</h2>
+                <p><strong>Login</strong> to post a comment</p>
+            </div>
+
+            <div class="write__box">
+                <div class="write__box--content">
+                    <textarea id="commentText" aria-valuetext="@Sunny Pham Nam polaroid bitters chillwave picked. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party. "></textarea>
+                </div>
+
+                <div id="postCommentButton" class="btn-primary">Post comment</div>
+            </div>
+        </section>
+
+        <section class="another pagePadding">
+            <h2>You might also like</h2>
+
+            <div class="another__container">
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="sunnyhotfix pagePadding">
+          <div class="sunnyhotfix__second">
+            <div class="footer__leftcontent">
+              <a href="/index.html" class="footer__leftcontent--img">
+                <img src="../img/Logo.png" alt="">
+              </a>
+              <div class="footer__leftcontent--text">
+                <h5>
+                  On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
+                </h5>
+              </div>
+            
+            </div>
+            <div class="footer__rightcontent">
+              
+              <div class="footer__rightcontent--items">
+                <h5>Tastebite</h5>
+                <a href="/#">About Us</a>
+                <a href="/#">Careers</a>
+                <a href="/#">Contact Us</a>
+                <a href="/#">Feedback</a>
+              </div>
+  
+  
+              <div class="footer__rightcontent--items">
+                <h5>Legal</h5>
+                <a href="/#">Terms</a>
+                <a href="/#">Conditions</a>
+                <a href="/#">Conokies</a>
+                <a href="/#">Copyright</a>
+              </div>
+  
+              <div class="footer__rightcontent--items">
+                <h5>Follow</h5>
+                <a href="/facebook.com/Sunny.pnhn">Facebook</a>
+                <a href="/twitter.com">Twitter</a>
+                <a href="/instagram.com">Instagram</a>
+                <a href="/youtube.com">Youtube</a>
+              </div>
+  
+            </div> 
+          </div>
+          <div class="footer__tag">
+            <div class="footer__tag--name">
+              <h5>Sunny Hoai Nam - 2020 Tastebite - All rights reserved</h5>
+            </div>
+            <div class="footer__tag--icon">
+              <a href="./#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="./#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="./#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/video.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/searchBar.js"></script>
+    <script src="../js/render/renderAnother.js"></script>
+    <script src="../js/chat.js"></script>
+    <script src="../js/navbar.js"></script>
 </body>
 </html>

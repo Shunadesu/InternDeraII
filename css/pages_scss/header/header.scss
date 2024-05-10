@@ -278,4 +278,15 @@
             right: 2rem;
         }
     }
+
+}
+
+@media screen and (max-width: 1000px){
+    .searchBar{
+        .closeButton{
+            position: absolute;
+            top: 6rem;
+            right: 3rem;
+        }
+    }
 }
