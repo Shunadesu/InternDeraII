@@ -77,3 +77,56 @@
 .DeleteAccountPopUpClose:hover{
     cursor: pointer;
 }
+@media screen and (max-width: 1000px){
+    .DeleteAccountPopUpContent {
+        border-radius: 10px;
+        height: 340px;
+    }
+    .DeleteAccountPopUp__text {
+        font-size: 30px;
+    }
+    .DeleteAccountPopUp__notetext {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .RecipeAgainPopUp__groupButton--Delete,
+    .RecipeAgainPopUp__groupButton--Cancel {
+        font-size: 18px;
+        width: 36%;
+        aspect-ratio: 1 / 0.3;
+        border-radius: 4px;
+    }
+}
+@media screen and (max-width: 550px){
+    .DeleteAccountPopUpContent {
+        border-radius: 10px;
+        width: calc(100% - 30px);
+        height: 260px;
+        /* aspect-ratio: 1 / 0.73; */
+        row-gap: 15px;
+        padding: 8%;
+    }
+    .DeleteAccountPopUpClose {
+        top: 16px;
+        right: 16px;
+        width: 14px;
+        height: 14px;
+    }
+    .DeleteAccountPopUpClose img {
+        width: 14px;
+        height: 14px;
+    }
+    .DeleteAccountPopUp__text {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .DeleteAccountPopUp__notetext {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .RecipeAgainPopUp__groupButton--Delete, .RecipeAgainPopUp__groupButton--Cancel {
+        font-size: 15px;
+        width: 40%;
+        aspect-ratio: 1 / 0.3;
+    }
+}

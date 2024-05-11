@@ -154,3 +154,105 @@
 .LogInPopUp__Notes:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 1000px){
+    .LogInPopUpContent {
+        border-radius: 12px;
+        row-gap: 30px;
+        width: 460px;
+        height: 560px;
+        padding: 46px 38px;
+    }
+    .LogInPopUp__title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .LogInPopUpContent i {
+        font-size: 20px;
+        display: inline-block;
+        width: 22px;
+        min-width: 22px;
+        max-width: 22px;
+        text-align: center;
+    }
+    .LogInPopUpContent input {
+        width: calc(100% - 32px);
+        font-size: 16px;
+    }
+    .LogInPopUp__LogInButton {
+        font-size: 16px;
+        padding: 14px 46px;
+        width: 150px;
+    }
+    .LogInPopUp__ForgotPassText {
+        font-size: 16px;
+        margin-top: -5px;
+    }
+    .LogInPopUp__Notes--text,
+    .LogInPopUp__Notes--SignUp {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 500px){
+    .LogInPopUpContent {
+        border-radius: 10px;
+        width: calc(100% - 30px);
+        padding: 8%;
+        row-gap: 26px;
+        height: 460px;
+        justify-content: center;
+    }
+    .LogInPopUpClose {
+        top: 16px;
+        right: 16px;
+        width: 14px;
+        height: 14px;
+    }
+    .LogInPopUpClose img {
+        width: 14px;
+        height: 14px;
+    }
+    .LogInPopUp__title {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .LogInPopUp__Email, .LogInPopUp__PassWord {
+        padding: 12px 8px;
+        column-gap: 8px;
+    }
+    .LogInPopUpContent i {
+        font-size: 17.2px;
+        display: inline-block;
+        width: 18.6px;
+        min-width: 18.6px;
+        max-width: 18.6px;
+        text-align: center;
+    }
+    .LogInPopUpContent input {
+        width: calc(100% - 26.6px);
+        font-size: 14px;
+    }
+    .LogInPopUp__ForgotPasswordText {
+        font-size: 12.8px;
+        margin-top: -20px;
+    }
+    .LogInPopUp__LogInButton {
+        font-size: 15px;
+        padding: 10px 40px;
+        width: auto;
+    }
+    .LogInPopUp__ForgotPassText {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+    .LogInPopUp__Media--Facebook span,
+    .LogInPopUp__Media--Google span {
+        font-size: 14px;
+    }
+    .LogInPopUp__Notes--text, .LogInPopUp__Notes--SignUp {
+        font-size: 14px;
+    }
+    .LogInPopUp__Notes {
+        margin-top: 0px;
+    }
+}

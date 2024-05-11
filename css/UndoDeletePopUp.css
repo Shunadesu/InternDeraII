@@ -32,3 +32,23 @@
 .UndoDeletePopUp__UndoButton:hover{
     cursor: pointer;
 }
+@media screen and (max-width: 1000px){
+    .UndoDeletePopUp__text {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 500px){
+    .UndoDeletePopUp {
+        column-gap: normal;
+        width: calc(100% - 30px);
+        justify-content: space-between;
+    }
+    .UndoDeletePopUp__text {
+        font-size: 16px;
+    }
+    .UndoDeletePopUp__UndoButton {
+        font-size: 14px;
+        padding: 8px 32px;
+    }
+}

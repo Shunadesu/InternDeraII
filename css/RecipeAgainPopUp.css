@@ -76,3 +76,51 @@
 .RecipeAgainPopUpClose:hover{
     cursor: pointer;
 }
+@media screen and (max-width: 640px) {
+    .RecipeAgainPopUpContent {
+        border-radius: 10px;
+        row-gap: 28px;
+        width: calc(100% - 30px);
+        height: auto;
+        aspect-ratio: 1 / 0.716;
+        padding: 8%;
+    }
+    .RecipeAgainPopUp__text {
+        font-size: 30px;
+        padding: 0 10%;
+    }
+    .RecipeAgainPopUp__yesButton,
+    .RecipeAgainPopUp__noButton {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 520px) {
+    .RecipeAgainPopUpContent {
+        border-radius: 10px;
+        row-gap: 20px;
+        width: calc(100% - 30px);
+        height: auto;
+        aspect-ratio: 1 / 0.716;
+        padding: 7%;
+    }
+    .RecipeAgainPopUpClose {
+        top: 16px;
+        right: 16px;
+        width: 14px;
+        height: 14px;
+    }
+    .RecipeAgainPopUpClose img {
+        width: 14px;
+        height: 14px;
+    }
+    .RecipeAgainPopUp__text {
+        font-size: 28px;
+        padding: 0 10%;
+    }
+    .RecipeAgainPopUp__yesButton,
+    .RecipeAgainPopUp__noButton {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

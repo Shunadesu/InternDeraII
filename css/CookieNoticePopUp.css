@@ -44,3 +44,48 @@
 .CookieNoticePopUp__GotItButton:hover{
     cursor: pointer;
 }
+@media screen and (max-width: 1000px){
+    .CookieNoticePopUp {
+        column-gap: 30px;
+        padding: 22px 30px;
+        width: 94%;
+    }
+    .CookieNoticePopUp__GotItButton {
+        font-size: 16px;
+        padding: 11px 38px;
+    }
+    .CookieNoticePopUp__text {
+        row-gap: 12px;
+    }
+    .CookieNoticePopUp__text--title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .CookieNoticePopUp__text--content {
+        font-size: 16.8px;
+    }
+}
+@media screen and (max-width: 500px){
+    .CookieNoticePopUp {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 15px;
+        width: calc(100% - 30px);
+        padding: 20px;
+        align-items: flex-start;
+    }
+    .CookieNoticePopUp__GotItButton {
+        font-size: 16px;
+        padding: 11px 40px;
+    }
+    .CookieNoticePopUp__text {
+        row-gap: 10px;
+    }
+    .CookieNoticePopUp__text--title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .CookieNoticePopUp__text--content {
+        font-size: 15px;
+    }
+}

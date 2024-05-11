@@ -101,3 +101,89 @@
 .SignUpPopUpClose:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 1000px){
+    .SignUpPopUpContent{
+        border-radius: 12px;
+        row-gap: 30px;
+        width: 460px;
+        height: 500px;
+        padding: 46px 38px;
+    }
+    .SignUpPopUp__title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .SignUpPopUpContent i {
+        font-size: 20px;
+        display: inline-block;
+        width: 22px;
+        min-width: 22px;
+        max-width: 22px;
+        text-align: center;
+    }
+    .SignUpPopUpContent input {
+        width: calc(100% - 32px);
+        font-size: 16px;
+    }
+    .SignUpPopUp__SignUpButton {
+        font-size: 16px;
+        padding: 14px 46px;
+        width: auto;
+    }
+    .SignUpPopUp__Notes--text,
+    .SignUpPopUp__Notes--link {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 500px){
+    .SignUpPopUpContent {
+        border-radius: 10px;
+        width: calc(100% - 30px);
+        padding: 8%;
+        row-gap: 26px;
+        height: 420px;
+        justify-content: center;
+    }
+    .SignUpPopUpClose {
+        top: 16px;
+        right: 16px;
+        width: 14px;
+        height: 14px;
+    }
+    .SignUpPopUpClose img {
+        width: 14px;
+        height: 14px;
+    }
+    .SignUpPopUp__title {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .SignUpPopUp__FullName,
+    .SignUpPopUp__Email,
+    .SignUpPopUp__PassWord{
+        padding: 12px 8px;
+        column-gap: 8px;
+    }
+    .SignUpPopUpContent i {
+        font-size: 17.2px;
+        display: inline-block;
+        width: 18.6px;
+        min-width: 18.6px;
+        max-width: 18.6px;
+        text-align: center;
+    }
+    .SignUpPopUpContent input {
+        width: calc(100% - 26.6px);
+        font-size: 14px;
+    }
+    .SignUpPopUp__SignUpButton {
+        font-size: 15px;
+        padding: 10px 40px;
+        width: auto;
+    }
+    .SignUpPopUp__Notes--text,
+    .SignUpPopUp__Notes--link {
+        font-size: 14px;
+    }
+}
