@@ -276,3 +276,7 @@ section{
   max-width: 2000px;margin: 0 auto;
   position: relative;
 }
+
+.linethrough{
+  text-decoration: line-through;
+}
