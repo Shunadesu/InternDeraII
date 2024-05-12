@@ -2,7 +2,7 @@
 const popup_UndoDelete = document.querySelector(".UndoDeletePopUp");
 var timeoutUndoDelete;
 var AllowUndo = "false";
-
+var array = new Array();
 
 
 // khai báo nút All button in Favorites page
@@ -25,6 +25,20 @@ function showUndoDeletePopup(popup,message) {
     popup.style.zIndex = popup_z_index.toString();
     popup.style.display = "flex";
 }
+
+// Function xóa mảng các đối tượng 
+function deleteArrayOBJ(arr){
+    for(let i = 0; i<arr.length ; i++){
+        arr[i].remove();
+    }
+}
+// Function khôi mảng các đối tượng 
+function restoreArrayOBJ(arr){
+    for(let i = 0; i<arr.length ; i++){
+        arr[i].style.display = "flex";
+    }
+}
+
 
 // Thêm sự kiện click cho phần tử "AllIconButton"
 AllIconButton.addEventListener("click", function() {
@@ -81,7 +95,8 @@ DeleteIconButton.addEventListener("click", function() {
         if(FavoritesItems[i].dataset.checkbox == "true")
         {
             quantityCheck++;
-            FavoritesItems[i].remove();
+            array.push(FavoritesItems[i]);
+            FavoritesItems[i].style.display="none";
         }
     }
     if(quantityCheck > 0)
@@ -89,7 +104,9 @@ DeleteIconButton.addEventListener("click", function() {
         showUndoDeletePopup(popup_UndoDelete,quantityCheck.toString() + " items deleted");
         timeoutUndoDelete = setTimeout(function() {
             AllowUndo = "false";
+            deleteArrayOBJ(array);
             hidePopup(popup_UndoDelete);//sau 5 giây popup Undo sẽ biến mất.
+            array = new Array();
         }, 5000);
         AllowUndo = "true";
     }
@@ -103,7 +120,9 @@ UndoButton.addEventListener("click", function() {
     {
         AllowUndo = "false";
         clearTimeout(timeoutUndoDelete);
+        restoreArrayOBJ(array);
         hidePopup(popup_UndoDelete);
+        array = new Array();
     }
 });
 
