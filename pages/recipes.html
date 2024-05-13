@@ -19,6 +19,15 @@
     <link rel="stylesheet" href="../css/pages_scss/categories/categories.css">
     <link rel="stylesheet" href="../css/pages_scss/blog/blog.css">
 
+    <!-- Popup Function -->
+    <link rel="stylesheet" href="../css/RecipeAgainPopUp.css" />
+    <link rel="stylesheet" href="../css/DeleteAccountPopUp.css" />
+    <link rel="stylesheet" href="../css/UndoDeletePopUp.css" />
+    <link rel="stylesheet" href="../css/CookieNoticePopUp.css" />
+    <link rel="stylesheet" href="../css/SignUpPopUp.css" />
+    <link rel="stylesheet" href="../css/LogInPopUp.css" />
+    <link rel="stylesheet" href="../css/AvatarHeader.css" />
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2f3b74e382.js" crossorigin="anonymous"></script>
 </head>
@@ -149,705 +158,797 @@
     
             <p class="closeNav"><i class="fa-regular fa-circle-xmark"></i></p>
         </div>
+        <main class="main pagePadding">
+            <section class="headding pagePadding">
+                <p>85% would make it again</p>
+                <div class="headding__content flex">
+                    <h1>Strawberry Cream Cheesecake</h1>
+                    <div class="heading__icon flex">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+    
+                <div class="heading__user flex">
+                    <div class="user flex">
+                        <div class="imgDiv">
+                            <img src="../img/user.jpg" alt="sunny__img">
+                        </div>
+                        <h4>Sunny Pham Nam</h4>
+                    </div>
+                    <div class="icon flex">
+                        <div class="flex">
+                        <i class="fa-regular fa-message"></i>
+                        <p>456</p>
+                        </div>
+                        <div class="flex">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>Yesterday</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="heading__text">
+                    One thing I learned living in the Canarsle section of Brooklyn, NY was how to cook a good Italian meal. Here is a recipe I created after having this dish in a restaurant. Enjoy!
+                </p>
+            </section>
+    
+            <section class="videosunny pagePadding">
+    
+                <video src="../video/strawcake.mp4" type="video/mp4" id="cakeVideo"></video>
+                <div class="play ">
+                    <i class="fa-regular fa-circle-play"></i>
+                </div>
+    
+    
+                <div class="pause">
+                    <i class="fa-regular fa-circle-pause"></i>            
+                </div>
+            </section>
+    
+            <section class="recipesblog pagePadding">
+              <div class="sectionleftcontent">
+                <div class="recipesblog__first flex">
+                  <div class="recipesblog__first--box">
+                    <p>PREP TIME</p>
+                    <p style="color: black; font-weight: 600;">15 MIN</p>
+                  </div>
+    
+                  <div class="recipesblog__first--box">
+                    <p>PREP TIME</p>
+                    <p style="color: black; font-weight: 600;">15 MIN</p>
+                  </div>
+    
+                  <div class="recipesblog__first--box">
+                    <p>SERVINGS</p>
+                    <div class="flex">
+                      <p style="color: black; font-weight: 600;">4 PEOPLE</p>
+                      <i class="fa-regular fa-clipboard"></i>
+                    </div>
+                  </div>
+    
+                  <div class="recipesblog__first--box">
+                    <i class="fa-solid fa-print"></i>
+                  </div>
+                </div>
+    
+                <div class="recipesblog__second">
+                  <h3>Ingredents</h3>
+    
+                  <h4>For the crust</h4>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>400g graham crakers</p>
+                  </div>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>150g unsalted butters, melted</p>
+                  </div>
+    
+                  <h4>For the Cheesecake</h4>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>300g marshmallows</p>
+                  </div>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>175g unsalted butter, melted</p>
+                  </div>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>500g Philadelphia cream cheese, softened</p>
+                  </div>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>250ml thickened/whipping cream, warm</p>
+                  </div>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>3 tbsp powdered gelatin + 3 tbsp water</p>
+                  </div>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>5 drops purple food gel</p>
+                  </div>
+    
+                  <div class="recipesblog__second--box flex">
+                    <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
+                    <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
+                    <p>3 drops blue food gel</p>
+                  </div>
+    
+                </div>
+    
+                <div class="recipesblog__third">
+                  <h3>Instructions</h3>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-1"></i></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam?</p>
+                  </div>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-2"></i></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi perferendis magni atque reprehenderit temporibus in, aut cumque placeat sapiente dicta repellendus voluptatibus maxime! Laborum adipisci quos commodi provident, reprehenderit deleniti?</p>
+                  </div>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-3"></i></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam?</p>
+                  </div>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-4"></i></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta libero voluptate nemo nesciunt cum sint voluptas, qui alias, earum voluptatem minus, cupiditate hic molestias possimus suscipit illum? Voluptate, qui veniam.</p>
+                  </div>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-5"></i></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam?</p>
+                  </div>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-6"></i></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam?</p>
+                  </div>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-7"></i></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam? adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremqu</p>
+                  </div>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-8"></i></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis reiciendis possimus suscipit illo vel expedita optio debitis quidem, doloribus corrupti sint explicabo minima ad veritatis quo, accusantium consectetur! Similique, qui?
+                    Exercitationem et veritatis repudiandae, odit repellendus, laborum eius laudantium accusantium praesentium iure dicta nesciunt aliquid perspiciatis, minus incidunt dignissimos neque nisi ab natus odio! Rerum inventore reprehenderit accusamus? Repudiandae, fugit.
+                    Voluptas architecto cumque quasi perspiciatis reprehenderit excepturi beatae minima voluptates magni autem ab harum, iusto necessitatibus fugiat ullam aut. Delectus aspernatur voluptatem odio, quia cum nemo sequi quaerat voluptatibus. Accusamus.
+                    Quisquam commodi officia ipsum odit dicta consectetur? Modi deserunt, deleniti facilis numquam voluptate cupiditate adipisci provident quos? Quae ad, eos perspiciatis suscipit maiores amet voluptate, omnis architecto facilis, nemo a.</p>
+                  </div>
+    
+                  <div class="recipesblog__third--box flex">
+                    <div class="number__box"><i class="fa-solid fa-9"></i></div>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sectionrightcontent">
+                <div class="recipesblog__fourth">
+                  <h3>Nutrition Facts</h3>
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Calories</p>
+                    <p style="color: black; font-weight:bold;">219.9</p>
+                  </div>
+    
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Total Fat</p>
+                    <p style="color: black; font-weight:bold;">10.7</p>
+                  </div>
+    
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Saturated Fat</p>
+                    <p style="color: black; font-weight:bold;">2.2</p>
+                  </div>
+    
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Cholesterol</p>
+                    <p style="color: black; font-weight:bold;">37.4 mg</p>
+                  </div>
+    
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Sodium</p>
+                    <p style="color: black; font-weight:bold;">120.3mg</p>
+                  </div>
+    
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Potassium</p>
+                    <p style="color: black; font-weight:bold;">32.8 mg</p>
+                  </div>
+    
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Total Cacbonhydrate</p>
+                    <p style="color: black; font-weight:bold;">22.3 g</p>
+                  </div>
+    
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Sugars</p>
+                    <p style="color: black; font-weight:bold;">8.4 g</p>
+                  </div>
+    
+                  <div class="recipesblog__fourth--box flex">
+                    <p>Protein</p>
+                    <p style="color: black; font-weight:bold;">7.9</p>
+                  </div>
+                </div>
+    
+                <div class="recipesblog__fifth">
+                  <h3>Fresh Recipes</h3>
+                  <div class="recipesblog__fifth--box flex">
+                    <div class="img__div">
+                      <img src="../img/recipes/image1.png" alt="">
+                    </div>
+                    <div class="box__text">
+                      <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p style="color: black; font-weight: bold;">
+                        Caramel Strawberry Milkshake
+                      </p>
+                    </div>
+                  </div>
+    
+                  <div class="recipesblog__fifth--box flex">
+                    <div class="img__div">
+                      <img src="../img/recipes/image2.png" alt="">
+                    </div>
+                    <div class="box__text">
+                      <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p style="color: black; font-weight: bold;">
+                        Cashew Vegan Rice                  </p>
+                    </div>
+                  </div>
+    
+                  <div class="recipesblog__fifth--box flex">
+                    <div class="img__div">
+                      <img src="../img/recipes/image3.png" alt="">
+                    </div>
+                    <div class="box__text">
+                      <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p style="color: black; font-weight: bold;">
+                        Smoked Salmon Salad Sandwich                </p>
+                    </div>
+                  </div>
+    
+                  <div class="recipesblog__fifth--box flex">
+                    <div class="img__div">
+                      <img src="../img/recipes/image4.png" alt="">
+                    </div>
+                    <div class="box__text">
+                      <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p style="color: black; font-weight: bold;">
+                        Salmon in Creamy Sun Dried Tomato Sauce              
+                      </p>
+                    </div>
+                  </div>
+    
+                  <div class="recipesblog__fifth--box flex">
+                    <div class="img__div">
+                      <img src="../img/recipes/image5.png" alt="">
+                    </div>
+                    <div class="box__text">
+                      <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p style="color: black; font-weight: bold;">
+                        Healthy Jam Waffle Breakfast                  
+                      </p>
+                    </div>
+                  </div>
+    
+                  <div class="recipesblog__fifth--box flex">
+                    <div class="img__div">
+                      <img src="../img/recipes/image6.png" alt="">
+                    </div>
+                    <div class="box__text">
+                      <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p style="color: black; font-weight: bold;">
+                        Chocolate and Banana Jar Cake                 
+                      </p>
+                    </div>
+                  </div>
+    
+                </div>
+    
+                <div class="recipesblog__sixth">
+                  <h3>Deliciousness to your inbox</h3>
+                  <p>Enjoy weekly hand picked recipes and recommendations</p>
+    
+                  <input type="email" class="input__recipes" name="Email" placeholder="Email Address" autocomplete="off">
+                  <button class="btn-primary">JOIN</button>
+    
+                  <p>By joining our newsletter you agree to our</p>
+                  <a href="/#">Terms and Conditions</a>
+                </div>
+    
+    
+              </div>
+            </section>
+    
+    
+            <section class="comments pagePadding">
+                <h1>Comments</h1>
+    
+                <div class="comments__content flex">
+                    <div class="user__imgDiv">
+                        <img src="../img/user.jpg" alt="user">
+                    </div>
+    
+                    <div class="comments__div">
+                        <div>
+                            <h3>Sunny Hoai Nam</h3>
+                            <p style="opacity: 0.6;">45 min ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                        <div class="comments__content--more flex">
+                            <div class="reply comit flex">
+                                <i class="fa-regular fa-message"></i>
+                                <p>Reply (2)</p>
+                            </div>
+    
+                            <div class="like flex">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>48</p>
+                            </div>
+    
+                            <div class="more flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- onclick add reply -->
+                <div class="comments__content pagePadding flex setreply hidden">
+                    <div class="user__imgDiv">
+                        <img src="../img/another__user.jpg" alt="user">
+                    </div>
+    
+                    <div class="comments__div">
+                        <div>
+                            <h3>Sunny Hoai Nam</h3>
+                            <p style="opacity: 0.6;">45 min ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                        <div class="comments__content--more flex">
+                            <div class="reply flex">
+                                <i class="fa-regular fa-message"></i>
+                                <p>Reply (2)</p>
+                            </div>
+    
+                            <div class="like flex">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>48</p>
+                            </div>
+    
+                            <div class="more flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="comments__content pagePadding flex setreply hidden">
+                    <div class="user__imgDiv">
+                        <img src="../img/another__user2.jpeg" alt="user">
+                    </div>
+    
+                    <div class="comments__div">
+                        <div>
+                            <h3>Sunny Hoai Nam</h3>
+                            <p style="opacity: 0.6;">45 min ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                        <div class="comments__content--more flex">
+                            <div class="reply flex">
+                                <i class="fa-regular fa-message"></i>
+                                <p>Reply (2)</p>
+                            </div>
+    
+                            <div class="like flex">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>48</p>
+                            </div>
+    
+                            <div class="more flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                <!-- end of it -->
+                <div class="comments__content flex">
+                    <div class="user__imgDiv">
+                        <img src="../img/another__user3.jpeg" alt="user">
+                    </div>
+    
+                    <div class="comments__div">
+                        <div>
+                            <h3>Sunny Hoai Nam</h3>
+                            <p style="opacity: 0.6;">45 min ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                        <div class="comments__content--more flex">
+                            <div class="reply flex">
+                                <i class="fa-regular fa-message"></i>
+                                <p>Reply (2)</p>
+                            </div>
+    
+                            <div class="like flex">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>48</p>
+                            </div>
+    
+                            <div class="more flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="comments__content flex">
+                    <div class="user__imgDiv">
+                        <img src="../img/another__user4.jpeg" alt="user">
+                    </div>
+    
+                    <div class="comments__div">
+                        <div>
+                            <h3>Sunny Hoai Nam</h3>
+                            <p style="opacity: 0.6;">45 min ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                        <div class="comments__content--more flex">
+                            <div class="reply flex">
+                                <i class="fa-regular fa-message"></i>
+                                <p>Reply (2)</p>
+                            </div>
+    
+                            <div class="like flex">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>48</p>
+                            </div>
+    
+                            <div class="more flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="comments__content flex">
+                    <div class="user__imgDiv">
+                        <img src="../img/user.jpg" alt="user">
+                    </div>
+    
+                    <div class="comments__div">
+                        <div>
+                            <h3>Sunny Hoai Nam</h3>
+                            <p style="opacity: 0.6;">45 min ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                        <div class="comments__content--more flex">
+                            <div class="reply flex">
+                                <i class="fa-regular fa-message"></i>
+                                <p>Reply (2)</p>
+                            </div>
+    
+                            <div class="like flex">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>48</p>
+                            </div>
+    
+                            <div class="more flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="comments__content flex">
+                    <div class="user__imgDiv">
+                        <img src="../img/user.jpg" alt="user">
+                    </div>
+    
+                    <div class="comments__div">
+                        <div>
+                            <h3>Sunny Hoai Nam</h3>
+                            <p style="opacity: 0.6;">45 min ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                        <div class="comments__content--more flex">
+                            <div class="reply flex">
+                                <i class="fa-regular fa-message"></i>
+                                <p>Reply (2)</p>
+                            </div>
+    
+                            <div class="like flex">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>48</p>
+                            </div>
+    
+                            <div class="more flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="comments__content flex">
+                    <div class="user__imgDiv">
+                        <img src="../img/user.jpg" alt="user">
+                    </div>
+    
+                    <div class="comments__div">
+                        <div>
+                            <h3>Sunny Hoai Nam</h3>
+                            <p style="opacity: 0.6;">45 min ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
+                        <div class="comments__content--more flex">
+                            <div class="reply flex">
+                                <i class="fa-regular fa-message"></i>
+                                <p>Reply (2)</p>
+                            </div>
+    
+                            <div class="like flex">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>48</p>
+                            </div>
+    
+                            <div class="more flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="commentDisplay"></div>
+    
+                <div class="btn__div">
+                    <div class="btn-secondary">Load 25 more comments</div>
+                </div>
+            </section>
+    
+            <section class="writecomment pagePadding">
+                <div class="write__heading flex">
+                    <h2>Write a comment</h2>
+                    <p><strong>Login</strong> to post a comment</p>
+                </div>
+    
+                <div class="write__box">
+                    <div class="write__box--content">
+                        <textarea id="commentText" aria-valuetext="@Sunny Pham Nam polaroid bitters chillwave picked. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party. "></textarea>
+                    </div>
+    
+                    <div id="postCommentButton" class="btn-primary">Post comment</div>
+                </div>
+            </section>
+    
+            <section class="another pagePadding">
+                <h2>You might also like</h2>
+    
+                <div class="another__container">
+    
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="sunnyhotfix pagePadding">
+              <div class="sunnyhotfix__second">
+                <div class="footer__leftcontent">
+                  <a href="/index.html" class="footer__leftcontent--img">
+                    <img src="../img/Logo.png" alt="">
+                  </a>
+                  <div class="footer__leftcontent--text">
+                    <h5>
+                      On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
+                    </h5>
+                  </div>
+                
+                </div>
+                <div class="footer__rightcontent">
+                  
+                  <div class="footer__rightcontent--items">
+                    <h5>Tastebite</h5>
+                    <a href="/#">About Us</a>
+                    <a href="/#">Careers</a>
+                    <a href="/#">Contact Us</a>
+                    <a href="/#">Feedback</a>
+                  </div>
+      
+      
+                  <div class="footer__rightcontent--items">
+                    <h5>Legal</h5>
+                    <a href="/#">Terms</a>
+                    <a href="/#">Conditions</a>
+                    <a href="/#">Conokies</a>
+                    <a href="/#">Copyright</a>
+                  </div>
+      
+                  <div class="footer__rightcontent--items">
+                    <h5>Follow</h5>
+                    <a href="/facebook.com/Sunny.pnhn">Facebook</a>
+                    <a href="/twitter.com">Twitter</a>
+                    <a href="/instagram.com">Instagram</a>
+                    <a href="/youtube.com">Youtube</a>
+                  </div>
+      
+                </div> 
+              </div>
+              <div class="footer__tag">
+                <div class="footer__tag--name">
+                  <h5>Sunny Hoai Nam - 2020 Tastebite - All rights reserved</h5>
+                </div>
+                <div class="footer__tag--icon">
+                  <a href="./#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="./#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="./#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="./#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+        </footer>
     </div>
-
-    <main class="main pagePadding">
-        <section class="headding pagePadding">
-            <p>85% would make it again</p>
-            <div class="headding__content flex">
-                <h1>Strawberry Cream Cheesecake</h1>
-                <div class="heading__icon flex">
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-            </div>
-
-            <div class="heading__user flex">
-                <div class="user flex">
-                    <div class="imgDiv">
-                        <img src="../img/user.jpg" alt="sunny__img">
-                    </div>
-                    <h4>Sunny Pham Nam</h4>
-                </div>
-                <div class="icon flex">
-                    <div class="flex">
-                    <i class="fa-regular fa-message"></i>
-                    <p>456</p>
-                    </div>
-                    <div class="flex">
-                    <i class="fa-regular fa-calendar"></i>
-                    <p>Yesterday</p>
-                    </div>
-                </div>
-            </div>
-
-            <p class="heading__text">
-                One thing I learned living in the Canarsle section of Brooklyn, NY was how to cook a good Italian meal. Here is a recipe I created after having this dish in a restaurant. Enjoy!
-            </p>
-        </section>
-
-        <section class="videosunny pagePadding">
-
-            <video src="../video/strawcake.mp4" type="video/mp4" id="cakeVideo"></video>
-            <div class="play ">
-                <i class="fa-regular fa-circle-play"></i>
-            </div>
-
-
-            <div class="pause">
-                <i class="fa-regular fa-circle-pause"></i>            
-            </div>
-        </section>
-
-        <section class="recipesblog pagePadding">
-          <div class="sectionleftcontent">
-            <div class="recipesblog__first flex">
-              <div class="recipesblog__first--box">
-                <p>PREP TIME</p>
-                <p style="color: black; font-weight: 600;">15 MIN</p>
-              </div>
-
-              <div class="recipesblog__first--box">
-                <p>PREP TIME</p>
-                <p style="color: black; font-weight: 600;">15 MIN</p>
-              </div>
-
-              <div class="recipesblog__first--box">
-                <p>SERVINGS</p>
-                <div class="flex">
-                  <p style="color: black; font-weight: 600;">4 PEOPLE</p>
-                  <i class="fa-regular fa-clipboard"></i>
-                </div>
-              </div>
-
-              <div class="recipesblog__first--box">
-                <i class="fa-solid fa-print"></i>
-              </div>
-            </div>
-
-            <div class="recipesblog__second">
-              <h3>Ingredents</h3>
-
-              <h4>For the crust</h4>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>400g graham crakers</p>
-              </div>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>150g unsalted butters, melted</p>
-              </div>
-
-              <h4>For the Cheesecake</h4>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>300g marshmallows</p>
-              </div>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>175g unsalted butter, melted</p>
-              </div>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>500g Philadelphia cream cheese, softened</p>
-              </div>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>250ml thickened/whipping cream, warm</p>
-              </div>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>3 tbsp powdered gelatin + 3 tbsp water</p>
-              </div>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>5 drops purple food gel</p>
-              </div>
-
-              <div class="recipesblog__second--box flex">
-                <span class="setchoose"><i class="fa-regular fa-circle"></i></span>
-                <span class="hidden choose"><i class="fa-regular fa-circle-check"></i></span>
-                <p>3 drops blue food gel</p>
-              </div>
-
-            </div>
-
-            <div class="recipesblog__third">
-              <h3>Instructions</h3>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-1"></i></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam?</p>
-              </div>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-2"></i></div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi perferendis magni atque reprehenderit temporibus in, aut cumque placeat sapiente dicta repellendus voluptatibus maxime! Laborum adipisci quos commodi provident, reprehenderit deleniti?</p>
-              </div>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-3"></i></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam?</p>
-              </div>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-4"></i></div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta libero voluptate nemo nesciunt cum sint voluptas, qui alias, earum voluptatem minus, cupiditate hic molestias possimus suscipit illum? Voluptate, qui veniam.</p>
-              </div>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-5"></i></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam?</p>
-              </div>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-6"></i></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam?</p>
-              </div>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-7"></i></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremque, vero asperiores quidem labore nam? adipisicing elit. Quae itaque tempore illum perferendis, dolores minus beatae optio nam ea ad enim asperiores maxime. Ducimus doloremqu</p>
-              </div>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-8"></i></div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis reiciendis possimus suscipit illo vel expedita optio debitis quidem, doloribus corrupti sint explicabo minima ad veritatis quo, accusantium consectetur! Similique, qui?
-                Exercitationem et veritatis repudiandae, odit repellendus, laborum eius laudantium accusantium praesentium iure dicta nesciunt aliquid perspiciatis, minus incidunt dignissimos neque nisi ab natus odio! Rerum inventore reprehenderit accusamus? Repudiandae, fugit.
-                Voluptas architecto cumque quasi perspiciatis reprehenderit excepturi beatae minima voluptates magni autem ab harum, iusto necessitatibus fugiat ullam aut. Delectus aspernatur voluptatem odio, quia cum nemo sequi quaerat voluptatibus. Accusamus.
-                Quisquam commodi officia ipsum odit dicta consectetur? Modi deserunt, deleniti facilis numquam voluptate cupiditate adipisci provident quos? Quae ad, eos perspiciatis suscipit maiores amet voluptate, omnis architecto facilis, nemo a.</p>
-              </div>
-
-              <div class="recipesblog__third--box flex">
-                <div class="number__box"><i class="fa-solid fa-9"></i></div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-              </div>
-            </div>
+    <div class="RecipeAgainPopUp">
+      <div class="RecipeAgainPopUpContent">
+        <div class="RecipeAgainPopUpClose">
+          <img src="../img/icon/close-popup-icon.svg">
+        </div>
+        <span class="RecipeAgainPopUp__text">Would you make this recipe again?</span>
+        <button class="RecipeAgainPopUp__yesButton">YES!</button>
+        <button class="RecipeAgainPopUp__noButton">NO!</button>
+      </div>
+    </div>
+    <div class="DeleteAccountPopUp">
+      <div class="DeleteAccountPopUpContent">
+        <div class="DeleteAccountPopUpClose">
+          <img src="../img/icon/close-popup-icon.svg">
+        </div>
+        <span class="DeleteAccountPopUp__text">Are you sure you want to delete your account?</span>
+        <span class="DeleteAccountPopUp__notetext">To ensure an optimum user experience, we use cookies to collect some user data for
+          advertising and analytics purposes read more</span>
+        <div class="RecipeAgainPopUp__groupButton">
+          <button class="RecipeAgainPopUp__groupButton--Delete">Delete</button>
+          <button class="RecipeAgainPopUp__groupButton--Cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="UndoDeletePopUp">
+      <span class="UndoDeletePopUp__text">12 items deleted</span>
+      <button class="UndoDeletePopUp__UndoButton">Undo</button>
+    </div>
+    <div class="CookieNoticePopUp">
+      <div class="CookieNoticePopUp__text">
+        <span class="CookieNoticePopUp__text--title">Cookie Notice</span>
+        <span class="CookieNoticePopUp__text--content">To ensure an optimum user experience, we use cookies to collect some user data for advertising and analytics purposes.</span>
+      </div>
+      <button class="CookieNoticePopUp__GotItButton">Got it</button>
+    </div>
+    <div class="SignUpPopUp">
+      <div class="SignUpPopUpContent">
+        <div class="SignUpPopUpClose">
+          <img src="../img/icon/close-popup-icon.svg">
+        </div>
+        <span class="SignUpPopUp__title">SIGN UP</span>
+        <div class="SignUpPopUp__FullName">
+          <i class="fa-regular fa-user"></i>
+          <input type="text" placeholder="Full Name">
+        </div>
+        <div class="SignUpPopUp__Email">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="SignUpPopUp__PassWord">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password">
+        </div>
+        <button class="SignUpPopUp__SignUpButton">Sign up</button>
+        <span class="SignUpPopUp__Notes">
+          <span class="SignUpPopUp__Notes--text">By creating an account, you agree to our </span>
+          <a href="#" class="SignUpPopUp__Notes--link">Terms & Conditions</a>
+        </span>
+      </div>
+    </div>
+    <div class="LogInPopUp">
+      <div class="LogInPopUpContent">
+        <div class="LogInPopUpClose">
+          <img src="../img/icon/close-popup-icon.svg">
+        </div>
+        <span class="LogInPopUp__title">LOGIN</span>
+        <div class="LogInPopUp__Email">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="LogInPopUp__PassWord">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password">
+        </div>
+        <span class="LogInPopUp__ForgotPasswordText">Forgot Password?</span>
+        <button class="LogInPopUp__LogInButton">Login</button>
+        <span class="LogInPopUp__ForgotPassText">Or login with</span>
+        <div class="LogInPopUp__Media">
+          <div class="LogInPopUp__Media--Facebook">
+            <img src="../img/icon/facebook-icon.png">
+            <span>Facebook</span>
           </div>
-          <div class="sectionrightcontent">
-            <div class="recipesblog__fourth">
-              <h3>Nutrition Facts</h3>
-              <div class="recipesblog__fourth--box flex">
-                <p>Calories</p>
-                <p style="color: black; font-weight:bold;">219.9</p>
-              </div>
-
-              <div class="recipesblog__fourth--box flex">
-                <p>Total Fat</p>
-                <p style="color: black; font-weight:bold;">10.7</p>
-              </div>
-
-              <div class="recipesblog__fourth--box flex">
-                <p>Saturated Fat</p>
-                <p style="color: black; font-weight:bold;">2.2</p>
-              </div>
-
-              <div class="recipesblog__fourth--box flex">
-                <p>Cholesterol</p>
-                <p style="color: black; font-weight:bold;">37.4 mg</p>
-              </div>
-
-              <div class="recipesblog__fourth--box flex">
-                <p>Sodium</p>
-                <p style="color: black; font-weight:bold;">120.3mg</p>
-              </div>
-
-              <div class="recipesblog__fourth--box flex">
-                <p>Potassium</p>
-                <p style="color: black; font-weight:bold;">32.8 mg</p>
-              </div>
-
-              <div class="recipesblog__fourth--box flex">
-                <p>Total Cacbonhydrate</p>
-                <p style="color: black; font-weight:bold;">22.3 g</p>
-              </div>
-
-              <div class="recipesblog__fourth--box flex">
-                <p>Sugars</p>
-                <p style="color: black; font-weight:bold;">8.4 g</p>
-              </div>
-
-              <div class="recipesblog__fourth--box flex">
-                <p>Protein</p>
-                <p style="color: black; font-weight:bold;">7.9</p>
-              </div>
-            </div>
-
-            <div class="recipesblog__fifth">
-              <h3>Fresh Recipes</h3>
-              <div class="recipesblog__fifth--box flex">
-                <div class="img__div">
-                  <img src="../img/recipes/image1.png" alt="">
-                </div>
-                <div class="box__text">
-                  <div class="flex">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <p style="color: black; font-weight: bold;">
-                    Caramel Strawberry Milkshake
-                  </p>
-                </div>
-              </div>
-
-              <div class="recipesblog__fifth--box flex">
-                <div class="img__div">
-                  <img src="../img/recipes/image2.png" alt="">
-                </div>
-                <div class="box__text">
-                  <div class="flex">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <p style="color: black; font-weight: bold;">
-                    Cashew Vegan Rice                  </p>
-                </div>
-              </div>
-
-              <div class="recipesblog__fifth--box flex">
-                <div class="img__div">
-                  <img src="../img/recipes/image3.png" alt="">
-                </div>
-                <div class="box__text">
-                  <div class="flex">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <p style="color: black; font-weight: bold;">
-                    Smoked Salmon Salad Sandwich                </p>
-                </div>
-              </div>
-
-              <div class="recipesblog__fifth--box flex">
-                <div class="img__div">
-                  <img src="../img/recipes/image4.png" alt="">
-                </div>
-                <div class="box__text">
-                  <div class="flex">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <p style="color: black; font-weight: bold;">
-                    Salmon in Creamy Sun Dried Tomato Sauce              
-                  </p>
-                </div>
-              </div>
-
-              <div class="recipesblog__fifth--box flex">
-                <div class="img__div">
-                  <img src="../img/recipes/image5.png" alt="">
-                </div>
-                <div class="box__text">
-                  <div class="flex">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <p style="color: black; font-weight: bold;">
-                    Healthy Jam Waffle Breakfast                  
-                  </p>
-                </div>
-              </div>
-
-              <div class="recipesblog__fifth--box flex">
-                <div class="img__div">
-                  <img src="../img/recipes/image6.png" alt="">
-                </div>
-                <div class="box__text">
-                  <div class="flex">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <p style="color: black; font-weight: bold;">
-                    Chocolate and Banana Jar Cake                 
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="recipesblog__sixth">
-              <h3>Deliciousness to your inbox</h3>
-              <p>Enjoy weekly hand picked recipes and recommendations</p>
-
-              <input type="email" class="input__recipes" name="Email" placeholder="Email Address" autocomplete="off">
-              <button class="btn-primary">JOIN</button>
-
-              <p>By joining our newsletter you agree to our</p>
-              <a href="/#">Terms and Conditions</a>
-            </div>
-
-
-          </div>
-        </section>
-
-
-        <section class="comments pagePadding">
-            <h1>Comments</h1>
-
-            <div class="comments__content flex">
-                <div class="user__imgDiv">
-                    <img src="../img/user.jpg" alt="user">
-                </div>
-
-                <div class="comments__div">
-                    <div>
-                        <h3>Sunny Hoai Nam</h3>
-                        <p style="opacity: 0.6;">45 min ago</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
-                    <div class="comments__content--more flex">
-                        <div class="reply comit flex">
-                            <i class="fa-regular fa-message"></i>
-                            <p>Reply (2)</p>
-                        </div>
-
-                        <div class="like flex">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>48</p>
-                        </div>
-
-                        <div class="more flex">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- onclick add reply -->
-            <div class="comments__content pagePadding flex setreply hidden">
-                <div class="user__imgDiv">
-                    <img src="../img/another__user.jpg" alt="user">
-                </div>
-
-                <div class="comments__div">
-                    <div>
-                        <h3>Sunny Hoai Nam</h3>
-                        <p style="opacity: 0.6;">45 min ago</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
-                    <div class="comments__content--more flex">
-                        <div class="reply flex">
-                            <i class="fa-regular fa-message"></i>
-                            <p>Reply (2)</p>
-                        </div>
-
-                        <div class="like flex">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>48</p>
-                        </div>
-
-                        <div class="more flex">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comments__content pagePadding flex setreply hidden">
-                <div class="user__imgDiv">
-                    <img src="../img/another__user2.jpeg" alt="user">
-                </div>
-
-                <div class="comments__div">
-                    <div>
-                        <h3>Sunny Hoai Nam</h3>
-                        <p style="opacity: 0.6;">45 min ago</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
-                    <div class="comments__content--more flex">
-                        <div class="reply flex">
-                            <i class="fa-regular fa-message"></i>
-                            <p>Reply (2)</p>
-                        </div>
-
-                        <div class="like flex">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>48</p>
-                        </div>
-
-                        <div class="more flex">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             
-            <!-- end of it -->
-            <div class="comments__content flex">
-                <div class="user__imgDiv">
-                    <img src="../img/another__user3.jpeg" alt="user">
-                </div>
-
-                <div class="comments__div">
-                    <div>
-                        <h3>Sunny Hoai Nam</h3>
-                        <p style="opacity: 0.6;">45 min ago</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
-                    <div class="comments__content--more flex">
-                        <div class="reply flex">
-                            <i class="fa-regular fa-message"></i>
-                            <p>Reply (2)</p>
-                        </div>
-
-                        <div class="like flex">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>48</p>
-                        </div>
-
-                        <div class="more flex">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comments__content flex">
-                <div class="user__imgDiv">
-                    <img src="../img/another__user4.jpeg" alt="user">
-                </div>
-
-                <div class="comments__div">
-                    <div>
-                        <h3>Sunny Hoai Nam</h3>
-                        <p style="opacity: 0.6;">45 min ago</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
-                    <div class="comments__content--more flex">
-                        <div class="reply flex">
-                            <i class="fa-regular fa-message"></i>
-                            <p>Reply (2)</p>
-                        </div>
-
-                        <div class="like flex">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>48</p>
-                        </div>
-
-                        <div class="more flex">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comments__content flex">
-                <div class="user__imgDiv">
-                    <img src="../img/user.jpg" alt="user">
-                </div>
-
-                <div class="comments__div">
-                    <div>
-                        <h3>Sunny Hoai Nam</h3>
-                        <p style="opacity: 0.6;">45 min ago</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
-                    <div class="comments__content--more flex">
-                        <div class="reply flex">
-                            <i class="fa-regular fa-message"></i>
-                            <p>Reply (2)</p>
-                        </div>
-
-                        <div class="like flex">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>48</p>
-                        </div>
-
-                        <div class="more flex">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comments__content flex">
-                <div class="user__imgDiv">
-                    <img src="../img/user.jpg" alt="user">
-                </div>
-
-                <div class="comments__div">
-                    <div>
-                        <h3>Sunny Hoai Nam</h3>
-                        <p style="opacity: 0.6;">45 min ago</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
-                    <div class="comments__content--more flex">
-                        <div class="reply flex">
-                            <i class="fa-regular fa-message"></i>
-                            <p>Reply (2)</p>
-                        </div>
-
-                        <div class="like flex">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>48</p>
-                        </div>
-
-                        <div class="more flex">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comments__content flex">
-                <div class="user__imgDiv">
-                    <img src="../img/user.jpg" alt="user">
-                </div>
-
-                <div class="comments__div">
-                    <div>
-                        <h3>Sunny Hoai Nam</h3>
-                        <p style="opacity: 0.6;">45 min ago</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni eum nesciunt, a hic eaque quaerat similique ipsum ex libero rerum exercitationem accusantium? Autem in blanditiis libero. Qui, in a.</p>
-                    <div class="comments__content--more flex">
-                        <div class="reply flex">
-                            <i class="fa-regular fa-message"></i>
-                            <p>Reply (2)</p>
-                        </div>
-
-                        <div class="like flex">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>48</p>
-                        </div>
-
-                        <div class="more flex">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="commentDisplay"></div>
-
-            <div class="btn__div">
-                <div class="btn-secondary">Load 25 more comments</div>
-            </div>
-        </section>
-
-        <section class="writecomment pagePadding">
-            <div class="write__heading flex">
-                <h2>Write a comment</h2>
-                <p><strong>Login</strong> to post a comment</p>
-            </div>
-
-            <div class="write__box">
-                <div class="write__box--content">
-                    <textarea id="commentText" aria-valuetext="@Sunny Pham Nam polaroid bitters chillwave picked. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party. "></textarea>
-                </div>
-
-                <div id="postCommentButton" class="btn-primary">Post comment</div>
-            </div>
-        </section>
-
-        <section class="another pagePadding">
-            <h2>You might also like</h2>
-
-            <div class="another__container">
-
-            </div>
-        </section>
-    </main>
-
-
-    <footer class="footer">
-        <div class="sunnyhotfix pagePadding">
-          <div class="sunnyhotfix__second">
-            <div class="footer__leftcontent">
-              <a href="/index.html" class="footer__leftcontent--img">
-                <img src="../img/Logo.png" alt="">
-              </a>
-              <div class="footer__leftcontent--text">
-                <h5>
-                  On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
-                </h5>
-              </div>
-            
-            </div>
-            <div class="footer__rightcontent">
-              
-              <div class="footer__rightcontent--items">
-                <h5>Tastebite</h5>
-                <a href="/#">About Us</a>
-                <a href="/#">Careers</a>
-                <a href="/#">Contact Us</a>
-                <a href="/#">Feedback</a>
-              </div>
-  
-  
-              <div class="footer__rightcontent--items">
-                <h5>Legal</h5>
-                <a href="/#">Terms</a>
-                <a href="/#">Conditions</a>
-                <a href="/#">Conokies</a>
-                <a href="/#">Copyright</a>
-              </div>
-  
-              <div class="footer__rightcontent--items">
-                <h5>Follow</h5>
-                <a href="/facebook.com/Sunny.pnhn">Facebook</a>
-                <a href="/twitter.com">Twitter</a>
-                <a href="/instagram.com">Instagram</a>
-                <a href="/youtube.com">Youtube</a>
-              </div>
-  
-            </div> 
-          </div>
-          <div class="footer__tag">
-            <div class="footer__tag--name">
-              <h5>Sunny Hoai Nam - 2020 Tastebite - All rights reserved</h5>
-            </div>
-            <div class="footer__tag--icon">
-              <a href="./#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="./#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="./#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="./#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+          <div class="LogInPopUp__Media--Google">
+            <img src="../img/icon/google-icon.png">
+            <span>Google</span>
           </div>
         </div>
-    </footer>
+        <span class="LogInPopUp__Notes">
+          <span class="LogInPopUp__Notes--text">Don't have an account? </span>
+          <span class="LogInPopUp__Notes--SignUp">Sign up</span>
+        </span>
+      </div>
+    </div>
+
+
 
 
     <script src="../js/video.js"></script>
@@ -856,9 +957,11 @@
     <script src="../js/render/renderAnother.js"></script>
     <script src="../js/chat.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/choose.js"></script>
 
-    <script src="../js/choose.js">
-      
-    </script>
+    <!-- function -->
+    <script src="../js/popupfunction.js"></script>
+    <script src="../js/LogInPopUp.js"></script>
+    <script src="../js/AvatarHeader.js"></script>
 </body>
 </html>

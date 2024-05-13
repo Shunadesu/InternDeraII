@@ -11,11 +11,20 @@
     <link rel="stylesheet" href="../css/pages_scss/indexscss/index.css">
     <link rel="stylesheet" href="../css/input.css">
     <link rel="stylesheet" href="../css/searchBar.css">
-
     <link rel="stylesheet" href="../css/pages_scss/header/header.css">
     <link rel="stylesheet" href="../css/pages_scss/footer/footer.css">
-
     <link rel="stylesheet" href="../css/pages_scss/categories/categories.css">
+
+    <!-- Popup function -->
+    <link rel="stylesheet" href="../css/RecipeAgainPopUp.css" />
+    <link rel="stylesheet" href="../css/DeleteAccountPopUp.css" />
+    <link rel="stylesheet" href="../css/UndoDeletePopUp.css" />
+    <link rel="stylesheet" href="../css/CookieNoticePopUp.css" />
+    <link rel="stylesheet" href="../css/SignUpPopUp.css" />
+    <link rel="stylesheet" href="../css/LogInPopUp.css" />
+
+    <link rel="stylesheet" href="../css/AvatarHeader.css" />
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2f3b74e382.js" crossorigin="anonymous"></script>
 </head>
@@ -239,9 +248,109 @@
             </div>
           </footer>
     </div>
-      <script src="../js/searchBar.js"></script>
-      <script src="../js/main.js"></script>
-      <script src="../js/navbar.js"></script>
-      <script src="../js/render/renderDessert.js"></script>
+
+    <div class="RecipeAgainPopUp">
+      <div class="RecipeAgainPopUpContent">
+        <div class="RecipeAgainPopUpClose">
+          <img src="../img/icon/close-popup-icon.svg">
+        </div>
+        <span class="RecipeAgainPopUp__text">Would you make this recipe again?</span>
+        <button class="RecipeAgainPopUp__yesButton">YES!</button>
+        <button class="RecipeAgainPopUp__noButton">NO!</button>
+      </div>
+    </div>
+    <div class="DeleteAccountPopUp">
+      <div class="DeleteAccountPopUpContent">
+        <div class="DeleteAccountPopUpClose">
+          <img src="../img/icon/close-popup-icon.svg">
+        </div>
+        <span class="DeleteAccountPopUp__text">Are you sure you want to delete your account?</span>
+        <span class="DeleteAccountPopUp__notetext">To ensure an optimum user experience, we use cookies to collect some user data for
+          advertising and analytics purposes read more</span>
+        <div class="RecipeAgainPopUp__groupButton">
+          <button class="RecipeAgainPopUp__groupButton--Delete">Delete</button>
+          <button class="RecipeAgainPopUp__groupButton--Cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="UndoDeletePopUp">
+      <span class="UndoDeletePopUp__text">12 items deleted</span>
+      <button class="UndoDeletePopUp__UndoButton">Undo</button>
+    </div>
+    <div class="CookieNoticePopUp">
+      <div class="CookieNoticePopUp__text">
+        <span class="CookieNoticePopUp__text--title">Cookie Notice</span>
+        <span class="CookieNoticePopUp__text--content">To ensure an optimum user experience, we use cookies to collect some user data for advertising and analytics purposes.</span>
+      </div>
+      <button class="CookieNoticePopUp__GotItButton">Got it</button>
+    </div>
+    <div class="SignUpPopUp">
+      <div class="SignUpPopUpContent">
+        <div class="SignUpPopUpClose">
+          <img src="../img/icon/close-popup-icon.svg">
+        </div>
+        <span class="SignUpPopUp__title">SIGN UP</span>
+        <div class="SignUpPopUp__FullName">
+          <i class="fa-regular fa-user"></i>
+          <input type="text" placeholder="Full Name">
+        </div>
+        <div class="SignUpPopUp__Email">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="SignUpPopUp__PassWord">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password">
+        </div>
+        <button class="SignUpPopUp__SignUpButton">Sign up</button>
+        <span class="SignUpPopUp__Notes">
+          <span class="SignUpPopUp__Notes--text">By creating an account, you agree to our </span>
+          <a href="#" class="SignUpPopUp__Notes--link">Terms & Conditions</a>
+        </span>
+      </div>
+    </div>
+    <div class="LogInPopUp">
+      <div class="LogInPopUpContent">
+        <div class="LogInPopUpClose">
+          <img src="../img/icon/close-popup-icon.svg">
+        </div>
+        <span class="LogInPopUp__title">LOGIN</span>
+        <div class="LogInPopUp__Email">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="LogInPopUp__PassWord">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password">
+        </div>
+        <span class="LogInPopUp__ForgotPasswordText">Forgot Password?</span>
+        <button class="LogInPopUp__LogInButton">Login</button>
+        <span class="LogInPopUp__ForgotPassText">Or login with</span>
+        <div class="LogInPopUp__Media">
+          <div class="LogInPopUp__Media--Facebook">
+            <img src="../img/icon/facebook-icon.png">
+            <span>Facebook</span>
+          </div>
+          <div class="LogInPopUp__Media--Google">
+            <img src="../img/icon/google-icon.png">
+            <span>Google</span>
+          </div>
+        </div>
+        <span class="LogInPopUp__Notes">
+          <span class="LogInPopUp__Notes--text">Don't have an account? </span>
+          <span class="LogInPopUp__Notes--SignUp">Sign up</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- function -->
+    <script src="../js/popupfunction.js"></script>
+    <script src="../js/LogInPopUp.js"></script>
+    <script src="../js/AvatarHeader.js"></script>
+
+    <script src="../js/searchBar.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/render/renderDessert.js"></script>
 </body>
 </html>
