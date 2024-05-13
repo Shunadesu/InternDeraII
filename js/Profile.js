@@ -10,7 +10,8 @@ let CloseDeleteAccountPopup = document.querySelector(".DeleteAccountPopUpClose")
 
 SignOutButton.addEventListener("click", function() {
     deleteCookie("Logged");
-    window.location = domain + "index.html";
+    location.reload();
+    // window.location = domain + "index.html";
 });
 // Thêm sự kiện click cho phần tử "DeleteAccountButton"
 DeleteAccountButton.addEventListener("click", function() {

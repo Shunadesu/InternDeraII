@@ -46,6 +46,7 @@ CloseSignUpPopup.addEventListener("click", function() {
 LoginButton.addEventListener("click", function() {
     hidePopup(popup_LogIn); 
     setCookie("Logged", "true", 1);
+    location.reload();
 });
 
 

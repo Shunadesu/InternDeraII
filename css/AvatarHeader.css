@@ -1,0 +1,15 @@
+.nav__search a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav__search a img{
+    height: 40px;
+    max-height: 40px;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    padding: 0.6rem;
+}
